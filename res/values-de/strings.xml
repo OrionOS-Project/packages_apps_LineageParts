@@ -384,6 +384,8 @@
     <string name="status_bar_brightness_slider_show_never">Niemals anzeigen</string>
     <string name="status_bar_brightness_slider_show_expanded">Anzeigen wenn erweitert</string>
     <string name="status_bar_brightness_slider_show_always">Immer anzeigen</string>
+    <string name="status_bar_toggle_brightness">Helligkeitssteuerung</string>
+    <string name="status_bar_toggle_brightness_summary">Helligkeit durch Wischen über die Statusleiste anpassen</string>
 
     <!-- Status bar - Icon tinting -->
     <string name="status_bar_tint_icons_title">Statusleisten-Symbole einfärben</string>
