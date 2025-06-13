@@ -35,5 +35,6 @@ android_app {
         "SettingsLibPreference",
         "SystemUISharedLib",
         "LineagePreferenceLib",
+        "VendorSupport-preference",
     ],
 }
