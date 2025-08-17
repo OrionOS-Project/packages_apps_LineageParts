@@ -248,6 +248,9 @@ public class KeyHandler implements DeviceKeyHandler {
                 case TouchscreenGestureConstants.ACTION_AMBIENT_DISPLAY:
                     launchDozePulse();
                     break;
+                case TouchscreenGestureConstants.ACTION_WAKE_DEVICE:
+                    performWakeUp();
+                    break;
             }
         }
     }
@@ -295,6 +298,7 @@ public class KeyHandler implements DeviceKeyHandler {
         mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
         mPowerManager.wakeUp(SystemClock.uptimeMillis(), PowerManager.WAKE_REASON_GESTURE,
                 GESTURE_WAKEUP_REASON);
+        doHapticFeedback();
     }
 
     private void toggleFlashlight() {
