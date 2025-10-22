@@ -153,6 +153,9 @@ public class ButtonSettings extends SettingsPreferenceFragment
         final ContentResolver resolver = requireActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
+        // Fix for volume dialog timeout slider crash - ensure value is within valid range
+        validateVolumeDialogTimeout(resolver);
+
         final boolean hasPowerKey = DeviceUtils.hasPowerKey();
         final boolean hasHomeKey = DeviceUtils.hasHomeKey(getActivity());
         final boolean hasBackKey = DeviceUtils.hasBackKey(getActivity());
@@ -949,4 +952,22 @@ public class ButtonSettings extends SettingsPreferenceFragment
             return result;
         }
     };
+
+    /**
+     * Validates and fixes the volume dialog timeout value to ensure it's within
+     * the valid range (500-10000) to prevent slider crashes.
+     */
+    private void validateVolumeDialogTimeout(ContentResolver resolver) {
+        final String key = "volume_dialog_timeout";
+        final int minValue = 500;
+        final int maxValue = 10000;
+        final int defaultValue = 3000;
+        
+        int currentValue = LineageSettings.System.getInt(resolver, key, defaultValue);
+        
+        // If the current value is outside the valid range, reset it to default
+        if (currentValue < minValue || currentValue > maxValue) {
+            LineageSettings.System.putInt(resolver, key, defaultValue);
+        }
+    }
 }
