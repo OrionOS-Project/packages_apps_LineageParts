@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS stillingar</string>
+    <string name="lineageparts_title">OrionOS stillingar</string>
     <string name="loading">Hleð inn\u2026</string>
     <string name="dlg_ok">Í lagi</string>
     <string name="cancel">Hætta við</string>
@@ -94,7 +94,7 @@
     <string name="live_display_low_power_summary">Aðlaga skjá fyrir minnstu orkunotkun án skerðingar afkasta</string>
     <string name="live_display_enhance_color_title">Bæta liti</string>
     <string name="live_display_enhance_color_summary">Bæta skærleika lita í húðtónum, landslagi og öðrum myndum</string>
-    <string name="live_display_color_profile_preview">Forskoðun litar</string>
+    <string name="live_display_color_profile_title">Litasnið</string>
     <string name="live_display_color_profile_standard_title">Staðlað</string>
     <string name="live_display_color_profile_standard_summary">Nákvæmir litir og bjartir hvítir</string>
     <string name="live_display_color_profile_natural_title">Náttúra</string>
@@ -167,8 +167,8 @@
     <string name="power_end_call_summary">Ljúktu símtalinu með því að ýta á aflhnappinn</string>
     <string name="swap_volume_buttons_title">Endurraða</string>
     <string name="swap_volume_buttons_summary">Víxla hljóðstyrkshnöppum þegar skjánum er snúið</string>
-    <string name="volume_panel_position_left">Vinstri</string>
-    <string name="volume_panel_position_right">Hægri</string>
+    <string name="volume_panel_on_left_title">Birta spjald vinstra megin</string>
+    <string name="volume_panel_on_left_summary">Birta hljóðstyrksspjald vinstra megin á skjánum</string>
     <string name="button_wake_title">Vekja tæki</string>
     <string name="volume_answer_call_title">Svara símtali</string>
     <string name="volume_answer_call_summary">Svara innhringingum með því að ýta á hljóðstyrkshnappana</string>
@@ -195,6 +195,7 @@
     <string name="swap_capacitive_keys_summary">Víxla \'Nýlegt\' og \'Til baka\' hnöppum</string>
     <string name="navigation_bar_category">Flakkstika</string>
     <string name="navigation_bar_enable_taskbar_title">Virkja verkefnastiku</string>
+    <string name="navigation_bar_invert_layout_title">Umsnúa framsetningu</string>
     <string name="navigation_bar_left_summary">Setja leiðsagnarstiku á vinstri hlið skjásins þegar hann er í láréttum ham</string>
     <string name="navigation_bar_back_long_press_title">Aðgerð þegar ýtt er lengi á \'Til baka\'-hnapp</string>
     <string name="navigation_bar_home_long_press_title">Aðgerð þegar ýtt er lengi á heimaskjá</string>
@@ -358,6 +359,7 @@
     <string name="status_bar_am_pm_hidden">Falið</string>
     <string name="status_bar_battery_title">Ástandsvísir rafhlöðu</string>
     <string name="status_bar_battery_style_title">Stíll á stöðu rafhlöðu</string>
+    <string name="status_bar_battery_style_icon_portrait">Lóðrétt táknmynd</string>
     <string name="status_bar_battery_style_circle">Hringur</string>
     <string name="status_bar_battery_style_text">Texti</string>
     <string name="status_bar_battery_percentage_title">Hleðsla rafhlöðu í prósentum</string>
@@ -398,10 +400,10 @@
     <string name="contributors_cloud_failed_message">Gat ekki hlaðið inn upplýsingum um framlög</string>
     <string name="contributor_info_menu">Upplýsingar um þátttakanda</string>
     <string name="contributions_info_menu">Upplýsingar um framlög</string>
-    <string name="anonymous_statistics_title">Tölfræði LineageOS</string>
-    <string name="anonymous_statistics_summary">Hjálpaðu okkur við að gera LineageOS betra með því að skrá þig í að senda nafnlausa notkunartölfræði</string>
+    <string name="anonymous_statistics_title">Tölfræði OrionOS</string>
+    <string name="anonymous_statistics_summary">Hjálpaðu okkur við að gera OrionOS betra með því að skrá þig í að senda nafnlausa notkunartölfræði</string>
     <string name="anonymous_statistics_warning_title">Um hugbúnaðinn</string>
-    <string name="anonymous_statistics_warning">Ef tekið er þátt í tölfræðisöfnun LineageOS er gefið leyfi til að sendar séu ópresónugreinanleg gögn til forritara LineageOS til að fylgjast með einstökum uppsetningum á mismunandi tækjum. Meðal upplýsinganna sem sendar eru inn er einstakt auðkenni,
+    <string name="anonymous_statistics_warning">Ef tekið er þátt í tölfræðisöfnun OrionOS er gefið leyfi til að sendar séu ópresónugreinanleg gögn til forritara OrionOS til að fylgjast með einstökum uppsetningum á mismunandi tækjum. Meðal upplýsinganna sem sendar eru inn er einstakt auðkenni,
         sem þó skerðir ekki friðhelgi persónulegra gagna. Gögnin eru send inn í hverri ræsingu.\n\nTil að sjá dæmi um hverskyns gögn er verið að senda, skaltu ýta á forskoðun gagna.</string>
     <string name="enable_reporting_title">Virkja sendingu skýrslna</string>
     <string name="preview_data_title">Forskoðun gagna</string>
@@ -488,7 +490,7 @@
     <string name="trust_feature_security_patches_value_new">Nýjasta útgáfa</string>
     <string name="trust_feature_security_patches_value_medium">Nokkra mánuði úr takti</string>
     <string name="trust_feature_security_patches_value_old">Úrelt</string>
-    <string name="trust_feature_security_patches_explain">Google gefur út öryggisplástra mánaðarlega í sambandi við SoC öryggissérfræðinga til að bæta úr göllum, sem óvinveitt forrit gætu nýtt sér til að komast framhjá öryggistakmörkunum og þannig valdið alvarlegum skemmdum á kerfinu þínu. Öryggisplástrar Google eru settir inn í hverjum mánuði á öll studd tæki, en öryggisplástra á séreignakóða getur einungis framleiðandi tækisins sett inn. Til að halda tækinu þinu öruggu ættirðu að sjá til þess að útgáfa þín af LineageOS sé ávallt af nýjustu gerð og (ef við á) tryggja að kerfisdiskmynd framleiðanda sé uppfærð í þá nýjustu sem LineageOS mælir með.</string>
+    <string name="trust_feature_security_patches_explain">Google gefur út öryggisplástra mánaðarlega í sambandi við SoC öryggissérfræðinga til að bæta úr göllum, sem óvinveitt forrit gætu nýtt sér til að komast framhjá öryggistakmörkunum og þannig valdið alvarlegum skemmdum á kerfinu þínu. Öryggisplástrar Google eru settir inn í hverjum mánuði á öll studd tæki, en öryggisplástra á séreignakóða getur einungis framleiðandi tækisins sett inn. Til að halda tækinu þinu öruggu ættirðu að sjá til þess að útgáfa þín af OrionOS sé ávallt af nýjustu gerð og (ef við á) tryggja að kerfisdiskmynd framleiðanda sé uppfærð í þá nýjustu sem OrionOS mælir með.</string>
     <string name="trust_feature_encryption">Dulritun</string>
     <string name="trust_feature_encryption_value_enabled">Virkt</string>
     <string name="trust_feature_encryption_value_nolock">Þarf öruggan læsiskjá</string>
@@ -498,7 +500,7 @@
     <string name="trust_notification_alerts_title">Öryggisaðvaranir</string>
     <string name="trust_warnings_alerts_intro">Þú getur valið hvaða öryggisvandamál þú vilt fá aðvaranir um. Öryggis þíns vegna er mælt með að þú virkir allar aðvaranirnar</string>
     <string name="trust_warnings_selinux">Staða SELinux</string>
-    <string name="trust_warnings_keys">Undirritun samsetningar</string>
+    <string name="trust_warnings_keys">Undirritun kerfisbyggingar</string>
     <string name="trust_onboarding_title">Heilsaðu upp á Traust</string>
     <string name="trust_onboarding_description">Traust hjálpar þér við að halda tækinu þínu öruggu og við að vernda persónulegar upplýsingar þínar.\nTáknmynd Trausts birtist einungis þegar efni síðunnar hefur verið sannreynt.</string>
     <string name="trust_onboarding_learn_more">Kanna nánar</string>

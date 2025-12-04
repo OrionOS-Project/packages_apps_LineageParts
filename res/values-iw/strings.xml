@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">הגדרות LineageOS</string>
+    <string name="lineageparts_title">הגדרות OrionOS</string>
     <string name="loading">טוען\u2026</string>
     <string name="dlg_ok">אישור</string>
     <string name="cancel">ביטול</string>
-    <string name="add">הוספה</string>
+    <string name="add">הוסף</string>
     <string name="choose_app">בחירת יישום</string>
     <string name="reset">איפוס</string>
     <string name="advanced">מתקדם</string>
@@ -48,7 +48,7 @@
     <string name="pulse_speed_very_slow">איטי מאוד</string>
     <string name="light_brightness_title">רמת בהירות</string>
     <string name="light_brightness_normal">רגילה</string>
-    <string name="light_brightness_zen">לא להפריע</string>
+    <string name="light_brightness_zen">נא לא להפריע</string>
     <string name="charging_control_title">בקרת טעינה</string>
     <string name="charging_control_enable_title">הפעלת בקרת טעינה</string>
     <string name="charging_control_mode_title">מצב טעינה</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">זמן יעד לטעינה מלאה</string>
     <string name="charging_control_target_time_summary">הסוללה תטען במלואה בשעה %s</string>
     <string name="charging_control_limit_title">מגבלה</string>
-    <string name="charging_control_limit_summary">מגבלה נוכחית: %d%%</string>
     <string name="battery_light_title">נורית הסוללה</string>
     <string name="battery_light_enable_title">הפעלת נורית הסוללה</string>
     <string name="battery_low_pulse_title">הבהב כאשר הסוללה חלשה</string>
@@ -83,7 +82,7 @@
     <string name="notification_light_missed_call_title">שיחה שלא נענתה</string>
     <string name="notification_light_voicemail_title">תא קולי</string>
     <string name="notification_light_screen_on">נוריות התראה כאשר המסך מופעל</string>
-    <string name="notification_light_zen_mode">הפעל נורית התראה במצב \"לא להפריע\"</string>
+    <string name="notification_light_zen_mode">הפעל נורית התראה במצב \"נא לא להפריע\"</string>
     <string name="keywords_lights_brightness_level">עמעם בהירות נוריות</string>
     <string name="notification_light_automagic">בחר צבעים אוטומטית</string>
     <string name="notification_light_automagic_summary">בוחר צבעים אוטומטית</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">התאם את התצוגה עבור צריכת האנרגיה הנמוכה ביותר ללא פגיעה באיכות</string>
     <string name="live_display_enhance_color_title">שפר צבעים</string>
     <string name="live_display_enhance_color_summary">שפר את רווית הצבעים של גווני עור, נופים וסוגי תמונות נוספים</string>
-    <string name="live_display_color_profile_preview">תצוגה מקדימה של צבע</string>
+    <string name="live_display_color_profile_title">פרופיל צבע</string>
     <string name="live_display_color_profile_standard_title">רגיל</string>
     <string name="live_display_color_profile_standard_summary">צבעים מדויקים וגווני לבן בהירים</string>
     <string name="live_display_color_profile_natural_title">טבעי</string>
@@ -178,10 +177,9 @@
     <string name="power_end_call_summary">סיום שיחה על ידי לחיצה על מקש הדלקת המכשיר</string>
     <string name="swap_volume_buttons_title">הפוך מקשי שמע</string>
     <string name="swap_volume_buttons_summary">הפוך בין מקשי השמע כאשר המסך הפוך</string>
-    <string name="volume_panel_position_title">מיקום פאנל עוצמת שמע</string>
-    <string name="volume_panel_position_left">שמאל</string>
-    <string name="volume_panel_position_right">ימין</string>
-    <string name="button_wake_title">הערת המכשיר</string>
+    <string name="volume_panel_on_left_title">הצגת חלונית משמאל</string>
+    <string name="volume_panel_on_left_summary">הצגת לוח עוצמת קול בצדו השמאלי של המסך</string>
+    <string name="button_wake_title">התעוררות ההתקן</string>
     <string name="volume_answer_call_title">קבלת שיחה</string>
     <string name="volume_answer_call_summary">קבלת שיחות נכנסות על ידי לחיצה על מקשי עוצמת השמע</string>
     <string name="home_answer_call_title">קבלת שיחה</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">החלפה בין המקשים \"חזור\" ו\"אחרונים\"</string>
     <string name="navigation_bar_category">סרגל ניווט</string>
     <string name="navigation_bar_enable_taskbar_title">הפעלת שורת המשימות</string>
+    <string name="navigation_bar_invert_layout_title">היפוך פריסה</string>
+    <string name="navigation_bar_invert_layout_summary">היפוך פריסת סרגל הניווט</string>
     <string name="navigation_bar_left_summary">כאשר המסך מאוזן מקם את סרגל הניווט בשמאל המסך</string>
     <string name="navigation_bar_back_long_press_title">פעולת לחיצה ארוכה על מקש חזרה</string>
     <string name="navigation_bar_home_long_press_title">פעולת לחיצה ארוכה על מקש הבית</string>
@@ -223,7 +223,7 @@
     <string name="power_menu_bug_report_devoptions_unavailable">הדיווח על תקלות מושבת מכיוון שהגדרות המפתחים מושבתת</string>
     <string name="power_menu_bug_report_unavailable_for_user">דיווח על תקלות מושבת למשתמשים שאינם ראשיים</string>
     <string name="power_menu_emergency_title">חירום</string>
-    <string name="power_menu_devicecontrols_title">פקדי המכשיר</string>
+    <string name="power_menu_devicecontrols_title">בקרי ההתקן</string>
     <string name="power_menu_advanced_restart_title">אתחול מתקדם</string>
     <string name="power_menu_advanced_restart_summary">כאשר לא נעול, הוספת אפשרויות של הפעלה מחדש למצב התאוששות (Recovery) או מנהל האתחול (Bootloader)</string>
     <string name="power_menu_emergency_affordance_enabled">אפשרות חירום הופעלה</string>
@@ -247,16 +247,16 @@
     <string name="profile_tabs_wifi">Wi\u2011Fi</string>
     <string name="profile_tabs_bluetooth">Bluetooth</string>
     <string name="profile_tabs_nfc">NFC</string>
-    <string name="profile_triggers_header">טריגרים שיפעילו את הפרופיל הזה</string>
-    <string name="profile_setup_setup_triggers_title">שלב 1: הוספת טריגרים</string>
-    <string name="profile_setup_setup_triggers_title_config">שינוי טריגרים: <xliff:g id="profile_name">%1$s </xliff:g></string>
+    <string name="profile_triggers_header">גורמים שיפעילו את הפרופיל הזה</string>
+    <string name="profile_setup_setup_triggers_title">שלב 1: הוסף גורמים מפעילים</string>
+    <string name="profile_setup_setup_triggers_title_config">שנה גורמים מפעילים: <xliff:g id="profile_name">%1$s </xliff:g></string>
     <string name="profile_setup_actions_title">שלב 2: הגדר פעולות</string>
     <string name="profile_setup_actions_title_config">הגדר מחדש פעולות</string>
     <string name="wireless_networks_settings_title">אלחוטי ורשתות</string>
-    <string name="no_bluetooth_triggers">אין מכשירי Bluetooth מחוברים.\nיש להקיש כדי לחבר מכשיר Bluetooth לפני הגדרת טריגרים.</string>
-    <string name="no_wifi_triggers">לא הוגדרו נקודות Wi-Fi.\nהקש כדי להתחבר ל-Wi-Fi לפני הגדרת טריגרים.</string>
-    <string name="no_triggers_configured">לא הוגדרו טריגרים. יש להקיש כדי להוסיף עוד.</string>
-    <string name="no_triggers_configured_nfc">הקשה כדי להגדיר טריגר NFC חדש.</string>
+    <string name="no_bluetooth_triggers">אין מכשירי Bluetooth מחוברים.\nהקש כדי לחבר מכשיר Bluetooth לפני הגדרת גורמים מפעילים.</string>
+    <string name="no_wifi_triggers">לא הוגדרו נקודות Wi-Fi.\nהקש כדי להתחבר ל-Wi-Fi לפני הגדרת גורמים מפעילים.</string>
+    <string name="no_triggers_configured">לא הוגדרו גורמים מפעילים. הקש כדי להגדיר עוד.</string>
+    <string name="no_triggers_configured_nfc">הקש כדי להגדיר גורם מפעיל חדש מ-NFC.</string>
     <string name="profile_setup_actions_description">עכשיו קבע מה קורה כאשר הפרופיל מופעל</string>
     <string name="profiles_settings_title">פרופילי מערכת</string>
     <string name="profiles_settings_enable_title">אפשר פרופילים</string>
@@ -264,7 +264,7 @@
     <string name="profile_settings_title">פרופיל</string>
     <string name="profile_empty_list_profiles_off">פרופילי המערכת כבוים, תוכל להפעיל אותם בלחיצה למעלה.</string>
     <string name="profile_settings_summary_off">הפרופילים מושבתים</string>
-    <string name="profile_trigger_configure">הגדרת טריגר</string>
+    <string name="profile_trigger_configure">הגדר גורם המפעיל</string>
     <string name="profile_write_nfc_tag">‏כתוב לתג NFC</string>
     <string name="profile_write_touch_tag">הצמד תג לכתיבה</string>
     <string name="profile_write_success">התג נכתב בהצלחה</string>
@@ -279,8 +279,8 @@
     <string name="profile_menu_fill_from_state">ייבא את הגדרות המכשיר הנוכחיות</string>
     <string name="profile_remove_current_profile">אין אפשרות למחוק את הפרופיל הנוכחי!</string>
     <string name="profile_app_group_category_title">עקוף התראות</string>
-    <string name="profile_app_group_item_instructions">הוספת או הסרת קבוצות</string>
-    <string name="profile_app_group_item_instructions_summary">הוספת או הסרת קבוצות יישומים לעקיפת התראות בפרופיל זה</string>
+    <string name="profile_app_group_item_instructions">הוסף או הסר קבוצות</string>
+    <string name="profile_app_group_item_instructions_summary">הוסף או הסר קבוצות יישומים לעקיפת התראות בפרופיל זה</string>
     <string name="profile_entries_on">מופעל</string>
     <string name="profile_entries_off">כבוי</string>
     <string name="profile_entries_no_override">ללא עקיפה</string>
@@ -306,7 +306,7 @@
     <string name="profile_settings">הגדרות פרופיל</string>
     <string name="profile_trigger_connect">בחיבור</string>
     <string name="profile_trigger_disconnect">בניתוק</string>
-    <string name="profile_trigger_notrigger">אין טריגר</string>
+    <string name="profile_trigger_notrigger">ללא גורם מפעיל</string>
     <string name="sound_mode">מצב התראות</string>
     <string name="ringer_mode">מצב צלצול</string>
     <string name="lights_mode">מצב נורית התראות</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">מוסתר</string>
     <string name="status_bar_battery_title">חיווי סוללה</string>
     <string name="status_bar_battery_style_title">סגנון הצגת סוללה</string>
-    <string name="status_bar_battery_style_icon_landscape">סמליל אופקי</string>
+    <string name="status_bar_battery_style_icon_portrait">סמל עומד</string>
     <string name="status_bar_battery_style_circle">עיגול</string>
-    <string name="status_bar_battery_style_dotted_circle">עיגול מנוקד</string>
     <string name="status_bar_battery_style_text">טקסט</string>
     <string name="status_bar_battery_percentage_title">אחוזי סוללה</string>
     <string name="status_bar_battery_percentage_default">מוסתר</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">אל תציג אף פעם</string>
     <string name="status_bar_brightness_slider_show_expanded">הצג כאשר מורחב</string>
     <string name="status_bar_brightness_slider_show_always">הצג תמיד</string>
-    <string name="status_bar_brightness_slider_position_title">מיקום מחוון הבהירות</string>
-    <string name="status_bar_brightness_slider_position_top">למעלה</string>
-    <string name="status_bar_brightness_slider_position_bottom">למטה</string>
     <string name="network_traffic_settings_title">ניטור תעבורת רשת</string>
     <string name="network_traffic_settings_summary">הצגת רמות תעבורת הרשת העכשוויות בשורת המצב</string>
     <string name="network_traffic_mode_title">מצב תצוגה</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">מיקום</string>
     <string name="network_traffic_autohide">הסתרה אוטומטית</string>
     <string name="network_traffic_autohide_summary">מנטר תעבורת הרשת יוסתר כאשר אין פעילות</string>
-    <string name="network_traffic_hide_arrows">הסתרת חיצים</string>
-    <string name="network_traffic_hide_arrows_summary">הסתרת חיצי כיוון העלאה והורדה</string>
     <string name="network_traffic_units_title">יחידות מידה לתעבורה</string>
     <string name="network_traffic_units_kilobits">קילוביט לשנייה (kb/s)</string>
     <string name="network_traffic_units_megabits">מגהביט לשנייה (Mb/s)</string>
@@ -426,10 +420,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>סה"כ תורמים:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>סה"כ שינויים:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>עדכון אחרון:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">סטטיסטיקות LineageOS</string>
-    <string name="anonymous_statistics_summary">עזור לשפר את LineageOS על ידי שליחת דיווחי סטטיסטיקות אנונימית</string>
+    <string name="anonymous_statistics_title">סטטיסטיקות OrionOS</string>
+    <string name="anonymous_statistics_summary">עזור לשפר את OrionOS על ידי שליחת דיווחי סטטיסטיקות אנונימית</string>
     <string name="anonymous_statistics_warning_title">אודות</string>
-    <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקות LineageOS תאפשר שליחת מידע לא אישי למפתחי LineageOS על מנת לאתר את מספר ההתקנות היחודיות לכל סוג מכשיר. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיותך או בנתונים האישיים שלך. המידע נשלח בכל אתחול המכשיר.\n\nכדי לצפות בדוגמה של מידע שנשלח, יש להקיש על הצגת נתונים מקדימה.</string>
+    <string name="anonymous_statistics_warning">הצטרפות לסטטיסטיקות OrionOS תאפשר שליחת מידע לא אישי למפתחי OrionOS על מנת לאתר את מספר ההתקנות לכל סוג מכשיר. המידע הנשלח כולל מזהה ייחודי, אשר אינו פוגע בפרטיותך או במידע שלך. המידע נשלח עם כל אתחול.\n\nכדי לצפות בדוגמה של מידע שנשלח, הקש על הצג דוגמה.</string>
     <string name="enable_reporting_title">אפשר דיווח</string>
     <string name="preview_data_title">תצוגה מקדימה של נתונים</string>
     <string name="view_stats_title">הצגת סטטיסטיקה</string>
@@ -509,18 +503,18 @@
     <string name="trust_feature_selinux">SELinux</string>
     <string name="trust_feature_selinux_value_enforcing">אכיפה (Enforcing)</string>
     <string name="trust_feature_selinux_value_disabled">כבוי (Disabled)</string>
-    <string name="trust_feature_selinux_explain">SELinux מכתיב לאילו תהליכים יש גישה לקבצים שונים במכשיר שלך.\nזה מונע מיישומים ומשירותים לגשת אל קבצים שהם לא אמורים לגעת בהם: בדרך זו לתהליכים זדוניים מוגבלת הגישה והמכשיר שלך נשאר מאובטח.</string>
+    <string name="trust_feature_selinux_explain">SELinux מכתיב לאילו תהליכים יש גישה לקבצים שונים בהתקן שלך.\nזה מונע מיישומים ומשירותים לגשת אל קבצים שהם לא אמורים לגעת בהם: בדרך זו לתהליכים זדוניים מוגבלת הגישה וההתקן שלך נשאר מאובטח.</string>
     <string name="trust_feature_security_patches">תיקוני אבטחה לאנדרואיד</string>
     <string name="trust_feature_security_patches_value_base">פלטפורמה: %1$s\nיצרן: %2$s</string>
     <string name="trust_feature_security_patches_value_new">עדכני</string>
     <string name="trust_feature_security_patches_value_medium">לא מעודכן כבר כמה חודשים</string>
     <string name="trust_feature_security_patches_value_old">לא עדכני</string>
-    <string name="trust_feature_security_patches_explain">עדכוני אבטחה מתפרסמים מדי חודש על ידי Google בשיתוף פעולה עם יצרני מערכות על שבב על מנת לפתור פגמים שיכולים להיות מנוצלים על ידי יישומים זדוניים במטרה לעקוף מגבלות אבטחה ולגרום נזק קבוע למכשירך. העדכונים המוצעים על ידי Google מוחלים על כל ההתקנים התומכים, אך עדכונים לקוד קנייני ניתנים להשמה אך ורק על ידי יצרן המכשיר שלך. על מנת לשמור על אבטחת מכשירך, יש לוודא כי גרסת LineageOS שברשותך תמיד עדכנית, וכמו כן (במידה ונדרש)  יש לוודא כי תמונת המערכת של היצרן מעודכנת לגרסה האחרונה המומלצת על די LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">עדכוני אבטחה מתפרסמים מדי חודש על־ידי Google בשיתוף פעולה עם יצרני מערכות על־שבב על מנת לפתור פגמים שיכולים להיות מנוצלים על ידי יישומים זדוניים במטרה לעקוף מגבלות אבטחה ולגרום נזק קבוע להתקן שלך. העדכונים המוצעים על־ידי Google מוחלים על כל ההתקנים התומכים, אך עדכונים לקוד קנייני ניתנים להשמה אך ורק על־ידי יצרן ההתקן שלך. על־מנת לשמור על בטיחות התקנך, יש לוודא כי גרסת OrionOS שברשותך תמיד עדכנית, וכמו כן יש לוודא כי תמונת המערכת של היצרן מעודכנת לגרסה האחרונה כפי שהומלץ על־ידי OrionOS.</string>
     <string name="trust_feature_encryption">הצפנה</string>
     <string name="trust_feature_encryption_value_enabled">מופעלת</string>
     <string name="trust_feature_encryption_value_nolock">נדרשת נעילת מסך מאובטחת</string>
     <string name="trust_feature_encryption_value_disabled">מושבתת</string>
-    <string name="trust_feature_encryption_explain">הצפנת מכשירך מונעת גישה למידע שלך כאשר האנדרואיד לא אותחל בטלפון שלך. זה חשוב במיוחד במקרה שהטלפון שלך נגנב, מכיוון שהוא מונע מאנשים לקרוא את ההודעות שלך, אנשי הקשר, ומידע אישי נוסף ללא הסיסמה שלך.\nכדי להפוך את ההצפנה ליעילה יותר, יש להגדיר סיסמת מסך נעילה מאובטחת.</string>
+    <string name="trust_feature_encryption_explain">הצפנת ההתקן שלך מונעת גישה למידע שלך כאשר ההתקן שלך אינו מריץ אנדרואיד. דבר זה חשוב במיוחד במקרה בו ההתקן שלך נגנב, מכיוון שהוא מונע מאנשים לקרוא את ההודעות שלך, אנשי הקשר, ומידע אישי נוסף ללא הסיסמה שלך.\nכדי להפוך את ההצפנה ליעילה יותר, יש להגדיר סיסמת מסך נעילה מאובטחת.</string>
     <string name="trust_category_tools">פרטיות</string>
     <string name="trust_notification_alerts_title">התראות אבטחה</string>
     <string name="trust_warnings_alerts_intro">באפשרותך לבחור בעיות האבטחה שיקפיצו התראות. למען בטיחותך, מומלץ להפעיל את כל ההתראות.</string>
@@ -535,7 +529,7 @@
     <string name="trust_restrict_usb_always">מניעת חיבורי USB</string>
     <string name="trust_restrict_usb_keyguard">אפשר חיבורי USB כשאינו נעול</string>
     <string name="trust_restrict_usb_disabled">אפשר חיבורי USB תמיד</string>
-    <string name="trust_summary">שומר על מכשירך מאובטח ומגן על פרטיותך</string>
+    <string name="trust_summary">שומר על אבטחת ההתקן ועל פרטיותך</string>
     <string name="sms_security_check_limit_title">מגבלת הודעות SMS</string>
     <string name="sms_security_check_limit_summary">יישומים יכולים לשלוח %s הודעות בדקה, לפני שיידרש אישור</string>
     <string name="sms_security_check_limit_summary_none">יישומים לא מורשים לשלוח כל הודעה בלי אישור</string>

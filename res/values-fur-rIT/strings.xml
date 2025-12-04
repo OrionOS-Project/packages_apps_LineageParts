@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Impostazions di LineageOS</string>
+    <string name="lineageparts_title">Impostazions di OrionOS</string>
     <string name="loading">Daûr a cjariâ\u2026</string>
     <string name="dlg_ok">Va ben</string>
     <string name="cancel">Anule</string>
@@ -104,6 +104,7 @@
     <string name="live_display_low_power_summary">Juste il schermi pal minim consum energjetic cence degradazion</string>
     <string name="live_display_enhance_color_title">Miore i colôrs</string>
     <string name="live_display_enhance_color_summary">Miore la vivece dal colôr pai tons de piel, paisaçs e altris imagjins</string>
+    <string name="live_display_color_profile_title">Profîl di colôr</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Colôrs curâts e blancs lusorôs</string>
     <string name="live_display_color_profile_natural_title">Naturâl</string>
@@ -176,8 +177,8 @@
     <string name="power_end_call_summary">Termine la clamade corinte fracant il boton di impiament</string>
     <string name="swap_volume_buttons_title">Torne oriente</string>
     <string name="swap_volume_buttons_summary">Invertìs i botons dal volum se il schermi al è voltât</string>
-    <string name="volume_panel_position_left">Çampe</string>
-    <string name="volume_panel_position_right">Diestre</string>
+    <string name="volume_panel_on_left_title">Mostre il panel a çampe</string>
+    <string name="volume_panel_on_left_summary">Visualize il panel dal volum de bande di çampe dal schermi</string>
     <string name="button_wake_title">Svee il dispositîf</string>
     <string name="volume_answer_call_title">Rispuint ae clamade</string>
     <string name="volume_answer_call_summary">Rispuint aes clamadis in jentrade fracant i botons dal volum</string>
@@ -204,6 +205,7 @@
     <string name="swap_capacitive_keys_summary">Scambie l\'ordin dai botons \"resints\" e \"indaûr\"</string>
     <string name="navigation_bar_category">Sbare di navigazion</string>
     <string name="navigation_bar_enable_taskbar_title">Abilite la sbare des aplicazions</string>
+    <string name="navigation_bar_invert_layout_title">Invertìs disposizion</string>
     <string name="navigation_bar_left_summary">Place la sbare di navigazion a çampe se il dispositîf al è voltât par orizontâl</string>
     <string name="navigation_bar_back_long_press_title">Azion di pression sprolungjade di Indaûr</string>
     <string name="navigation_bar_home_long_press_title">Azion di pression sprolungjade di Inizi</string>
@@ -367,6 +369,7 @@
     <string name="status_bar_am_pm_hidden">Platât</string>
     <string name="status_bar_battery_title">Indicadôr de batarie</string>
     <string name="status_bar_battery_style_title">Stîl dal nivel de batarie</string>
+    <string name="status_bar_battery_style_icon_portrait">Icone verticâl</string>
     <string name="status_bar_battery_style_circle">Cercli</string>
     <string name="status_bar_battery_style_text">Test</string>
     <string name="status_bar_battery_percentage_title">Percentuâl batarie</string>
@@ -416,11 +419,11 @@
     <string name="contributions_info_msg"><![CDATA[<b>Totâl colaboradôrs:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Totâl contribûts:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Ultin inzornament:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Statistichis di LineageOS</string>
-    <string name="anonymous_statistics_summary">Jude a miorâ LineageOS permetint l\'inviament di statistichis anonimis</string>
+    <string name="anonymous_statistics_title">Statistichis di OrionOS</string>
+    <string name="anonymous_statistics_summary">Jude a miorâ OrionOS permetint l\'inviament di statistichis anonimis</string>
     <string name="anonymous_statistics_warning_title">Informazions</string>
-    <string name="anonymous_statistics_warning">Ativant lis statistichis di LineageOS  tu permetarâs di inviâ dâts, chei che no son personâi, ai
-        svilupadôrs di LineageOS par contâ il numar di instalazions sui dispositîfs. Lis informazions inviadis a includin un identificadôr univoc,
+    <string name="anonymous_statistics_warning">Ativant lis statistichis di OrionOS  tu permetarâs di inviâ dâts, chei che no son personâi, ai
+        svilupadôrs di OrionOS par contâ il numar di instalazions sui dispositîfs. Lis informazions inviadis a includin un identificadôr univoc,
         che nol vâ a tocjâ in nissune maniere la tô riservatece o i tiei dâts personâi. I dâts a vegnin mandâts a ogni inviament dal sisteme.\n\nPar viodi un esempli di dâts inviâts, tocje Anteprime Dâts.</string>
     <string name="enable_reporting_title">Ative i rapuarts</string>
     <string name="preview_data_title">Anteprime dâts</string>
@@ -507,7 +510,7 @@
     <string name="trust_feature_security_patches_value_new">Inzornade</string>
     <string name="trust_feature_security_patches_value_medium">No inzornadis di cualchi mês</string>
     <string name="trust_feature_security_patches_value_old">No inzornadis</string>
-    <string name="trust_feature_security_patches_explain">Lis corezions di sigurece a vegnin publicadis ogni mês di Google in cooperazion cui produtôrs di SoC par risolvi problemis che a podaressin vignî sfrutâts da lis aplicazions malevulis par scjavalgjâ lis restrizions di sigurece e provocâ dams permanents al dispositîf. Lis corezions dadis fûr di Google a son aplicadis a ducj i dispositîfs supuartâts, ma chês relativis ai components proprietaris a puedin jessi aplicadis dome dal produtôr dal dispositîf. Par mantignî il dispositîf sigûr, controle che la tô version di LineageOS e sedi simpri inzornade e in câs controle che i components proprietaris, come i firmwares e la imagjin dal vendidôr, a sedin chei racomandâts di LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Lis corezions di sigurece a vegnin publicadis ogni mês di Google in cooperazion cui produtôrs di SoC par risolvi problemis che a podaressin vignî sfrutâts da lis aplicazions malevulis par scjavalgjâ lis restrizions di sigurece e provocâ dams permanents al dispositîf. Lis corezions dadis fûr di Google a son aplicadis a ducj i dispositîfs supuartâts, ma chês relativis ai components proprietaris a puedin jessi aplicadis dome dal produtôr dal dispositîf. Par mantignî il dispositîf sigûr, controle che la tô version di OrionOS e sedi simpri inzornade e in câs controle che i components proprietaris, come i firmwares e la imagjin dal vendidôr, a sedin chei racomandâts di OrionOS.</string>
     <string name="trust_feature_encryption">Criptazion</string>
     <string name="trust_feature_encryption_value_enabled">Ative</string>
     <string name="trust_feature_encryption_value_nolock">E necessite di une schermade di bloc sigure</string>

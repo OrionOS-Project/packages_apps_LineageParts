@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">تنظیمات LineageOS</string>
+    <string name="lineageparts_title">تنظیمات OrionOS</string>
     <string name="loading">در حال بارگذاری\u2026</string>
     <string name="dlg_ok">باشه</string>
     <string name="cancel">لغو</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">زمان مورد نظر برای شارژ کامل</string>
     <string name="charging_control_target_time_summary">باتری تا %s به طور کامل شارژ می شود</string>
     <string name="charging_control_limit_title">محدود</string>
-    <string name="charging_control_limit_summary">محدودیت فعلی: %d%%</string>
     <string name="battery_light_title">چراغ باتری</string>
     <string name="battery_light_enable_title">فعال سازی چراغ باتری</string>
     <string name="battery_low_pulse_title">چشمک هنگام کم بودن باتری</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">تنظیم صفحه برای مصرف کمترین نیرو بدون کاهش کارایی</string>
     <string name="live_display_enhance_color_title">بهبود رنگ‌ها</string>
     <string name="live_display_enhance_color_summary">بهبود طراوت رنگ پوست بدن، مناظر و تصاویر دیگر</string>
-    <string name="live_display_color_profile_preview">پیش‌نمایش رنگ</string>
+    <string name="live_display_color_profile_title">نمایهٔ رنگ</string>
     <string name="live_display_color_profile_standard_title">استاندارد</string>
     <string name="live_display_color_profile_standard_summary">رنگ‌های دقیق و سفید روشن</string>
     <string name="live_display_color_profile_natural_title">طبیعی</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">پایان تماس جاری با فشردن دکمهٔ روشن</string>
     <string name="swap_volume_buttons_title">تغییر جهت</string>
     <string name="swap_volume_buttons_summary">جابه‌جایی دکمه‌های صدا هنگام چرخش صفحه</string>
-    <string name="volume_panel_position_title">موقعیت پنل تنظیم صدا</string>
-    <string name="volume_panel_position_left">چپ</string>
-    <string name="volume_panel_position_right">راست</string>
+    <string name="volume_panel_on_left_title">نمایش پنل در سمت چپ</string>
+    <string name="volume_panel_on_left_summary">نمایش پنل صدا در گوشه سمت چپ نمایشگر</string>
     <string name="button_wake_title">بیدار کردن دستگاه</string>
     <string name="volume_answer_call_title">پاسخ به تماس</string>
     <string name="volume_answer_call_summary">پاسخ دادن به تماس‌های ورودی با فشردن دکمه‌های صدا</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">عوض کردن ترتیب دکمه های بازگشت و برنامه‌های اخیر</string>
     <string name="navigation_bar_category">نوار ناوبری</string>
     <string name="navigation_bar_enable_taskbar_title">فعالسازی نوار وظیفه</string>
+    <string name="navigation_bar_invert_layout_title">چینش معکوس</string>
+    <string name="navigation_bar_invert_layout_summary">طرح نوار ناوبری معکوس می‌شود</string>
     <string name="navigation_bar_left_summary">قراردادن نوار ناوبری حالت افقی در سمت چپ صفحه</string>
     <string name="navigation_bar_back_long_press_title">عملکرد ضربه طولانی کلید برگشت</string>
     <string name="navigation_bar_home_long_press_title">عملکرد فشار طولانی دکمه خانه</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">نهفته</string>
     <string name="status_bar_battery_title">نشانگر باتری</string>
     <string name="status_bar_battery_style_title">سبک وضعیت باتری</string>
-    <string name="status_bar_battery_style_icon_landscape">آیکون افقی</string>
+    <string name="status_bar_battery_style_icon_portrait">آیکون عمودی</string>
     <string name="status_bar_battery_style_circle">گرد</string>
-    <string name="status_bar_battery_style_dotted_circle">دایره نقطه چین</string>
     <string name="status_bar_battery_style_text">متن</string>
     <string name="status_bar_battery_percentage_title">درصد باتری</string>
     <string name="status_bar_battery_percentage_default">پنهان</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">نمایش نده</string>
     <string name="status_bar_brightness_slider_show_expanded">وقتی بزرگ شد نمایش دهید</string>
     <string name="status_bar_brightness_slider_show_always">همیشه نمایش بده</string>
-    <string name="status_bar_brightness_slider_position_title">موقعیت کشویی روشنایی</string>
-    <string name="status_bar_brightness_slider_position_top">بالا</string>
-    <string name="status_bar_brightness_slider_position_bottom">پایین</string>
     <string name="network_traffic_settings_title">رصد ترافیک شبکه</string>
     <string name="network_traffic_settings_summary">نمایش وضعیت کنونی سرعت تبادل شبکه در نوار وضعیت</string>
     <string name="network_traffic_mode_title">حالت نمایش</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">موقعیت</string>
     <string name="network_traffic_autohide">پنهان‌کردن خودکار</string>
     <string name="network_traffic_autohide_summary">مخفی‌کردن سرعت تبادل شبکه در زمان عدم فعالیت</string>
-    <string name="network_traffic_hide_arrows">پنهان کردن فلش‌ها</string>
-    <string name="network_traffic_hide_arrows_summary">پنهان کردن فلش‌های آپلود و دانلود</string>
     <string name="network_traffic_units_title">واحدهای اندازه‌گیری ترافیک</string>
     <string name="network_traffic_units_kilobits">کیلوبیت بر ثانیه (kb/s)</string>
     <string name="network_traffic_units_megabits">مگابیت بر ثانیه (Mb/s)</string>
@@ -421,17 +415,16 @@
     <string name="contributor_info_menu">اطّلاعات مشارکت کننده</string>
     <string name="contributor_info_msg"><![CDATA[<b>اسم:</b> <xliff:g id="name">%1$s</xliff:g><br/><br/>
                  <b>لقب:</b> <xliff:g id="nick">%2$s</xliff:g><br/><br/>
-                 <b>متعهد:</b> <xliff:g id="commits">%3$s</xliff:g>
-]]></string>
+                 <b>متعهد:</b> <xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">اطّلاعات مشارکت کنندگان</string>
     <string name="contributions_info_msg"><![CDATA[<b>کل مشارکت کنندگان:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>کل تعهدات:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>آخرین بروزرسانی:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">آمار LineageOS</string>
+    <string name="anonymous_statistics_title">آمار OrionOS</string>
     <string name="anonymous_statistics_summary">با مشارکت در گزارش آمار ناشناس، به بهتر شدن سیستم عامل کمک کنید</string>
     <string name="anonymous_statistics_warning_title">درباره</string>
-    <string name="anonymous_statistics_warning">مشارکت در آمار LineageOS اجازه می‌دهد اطلاعات غیرشخصی به
-        توسعه‌دهنگان LineageOS ارسال شده تا به موارد خاص نصب در دستگاه‌های مختلف دسترسی پیدا شود. اطّلاعات ارسال‌ شده شامل یک شناسهٔ یکتا است
+    <string name="anonymous_statistics_warning">مشارکت در آمار OrionOS اجازه می‌دهد اطلاعات غیرشخصی به
+        توسعه‌دهنگان OrionOS ارسال شده تا به موارد خاص نصب در دستگاه‌های مختلف دسترسی پیدا شود. اطّلاعات ارسال‌ شده شامل یک شناسهٔ یکتا است
         که حریم خصوصی یا اطلاعات شخصی شما را در خطر افشا شدن قرار نمی‌دهد. این اطلاعات هر بار هنگام راه‌اندازی دستگاه ارسال می‌شوند.\n\nبرای مشاهدهٔ یک نمونه از اطلاعاتی که ارسال می‌شود، روی پیش‌نمایش داده‌ها ضربه بزنید.</string>
     <string name="enable_reporting_title">فعال کردن گزارش دهی</string>
     <string name="preview_data_title">پیش‌نمایش داده‌ها</string>
@@ -503,9 +496,7 @@
     <string name="touchscreen_gesture_action_email">مشاهده ایمیل‌ها</string>
     <string name="touchscreen_gesture_action_messages">دیدن پیام‌هایتان</string>
     <string name="touchscreen_gesture_action_play_pause_music">پخش/توقف موسیقی</string>
-    <string name="touchscreen_gesture_action_previous_track">انتقال به آهنگ قبلی.
-
-</string>
+    <string name="touchscreen_gesture_action_previous_track">انتقال به آهنگ قبلی.</string>
     <string name="touchscreen_gesture_action_next_track">پرش به آهنگ بعدی</string>
     <string name="touchscreen_gesture_action_volume_down">کاهش صدای رسانه</string>
     <string name="touchscreen_gesture_action_volume_up">افزایش صدای رسانه</string>
@@ -520,7 +511,7 @@
     <string name="trust_feature_security_patches_value_new">به روز</string>
     <string name="trust_feature_security_patches_value_medium">چند ماه گذشته</string>
     <string name="trust_feature_security_patches_value_old">قدیمی</string>
-    <string name="trust_feature_security_patches_explain">وصله‌های امنیتی ماهانه توسط گوگل با همکاری فروشندگان SoC منتشر می‌شوند تا نقص‌هایی را برطرف کنند که می‌تواند توسط برنامه‌های مخرب برای دور زدن محدودیت‌های امنیتی و ایجاد آسیب دائمی به دستگاه شما استفاده شود. وصله‌هایی که توسط گوگل ارائه می‌شوند هر ماه روی تمامی دستگاه‌های پشتیبانی‌شده اعمال می‌شوند، اما وصله‌های کد اختصاصی تنها توسط سازنده دستگاه شما قابل اعمال هستند. برای ایمن نگه داشتن دستگاه خود، مطمئن شوید که نسخه LineageOS شما همیشه به‌روز است و (در صورت لزوم) اطمینان حاصل کنید که ایمیج فروشنده شما به آخرین نسخه توصیه‌شده توسط LineageOS به‌روز است.</string>
+    <string name="trust_feature_security_patches_explain">وصله‌های امنیتی ماهانه توسط گوگل با همکاری فروشندگان SoC منتشر می‌شوند تا نقص‌هایی را برطرف کنند که می‌تواند توسط برنامه‌های مخرب برای دور زدن محدودیت‌های امنیتی و ایجاد آسیب دائمی به دستگاه شما استفاده شود. وصله‌هایی که توسط گوگل ارائه می‌شوند هر ماه روی تمامی دستگاه‌های پشتیبانی‌شده اعمال می‌شوند، اما وصله‌های کد اختصاصی تنها توسط سازنده دستگاه شما قابل اعمال هستند. برای ایمن نگه داشتن دستگاه خود، مطمئن شوید که نسخه OrionOS شما همیشه به‌روز است و (در صورت لزوم) اطمینان حاصل کنید که ایمیج فروشنده شما به آخرین نسخه توصیه‌شده توسط OrionOS به‌روز است.</string>
     <string name="trust_feature_encryption">رمزنگاری</string>
     <string name="trust_feature_encryption_value_enabled">فعال</string>
     <string name="trust_feature_encryption_value_nolock">به یک صفحه قفل امن نیاز دارد</string>

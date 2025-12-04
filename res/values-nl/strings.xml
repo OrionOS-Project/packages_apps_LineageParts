@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS-instellingen</string>
+    <string name="lineageparts_title">OrionOS-instellingen</string>
     <string name="loading">Aan het laden\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Annuleer</string>
@@ -103,6 +103,7 @@
     <string name="live_display_low_power_summary">Scherm aanpassen voor laagst mogelijke energieverbruik zonder kwaliteitsverlies</string>
     <string name="live_display_enhance_color_title">Kleuren verbeteren</string>
     <string name="live_display_enhance_color_summary">Kleurlevendigheid verbeteren van huidtinten, landschappen en andere afbeeldingen</string>
+    <string name="live_display_color_profile_title">Kleurprofiel</string>
     <string name="live_display_color_profile_standard_title">Standaard</string>
     <string name="live_display_color_profile_standard_summary">Nauwkeurige kleuren en heldere witwaarden</string>
     <string name="live_display_color_profile_natural_title">Natuurlijk</string>
@@ -175,8 +176,8 @@
     <string name="power_end_call_summary">Huidige oproep beëindigen door op de aan/uit-knop te drukken</string>
     <string name="swap_volume_buttons_title">Oriëntatie</string>
     <string name="swap_volume_buttons_summary">Volumeknoppen omdraaien indien het scherm gedraaid is</string>
-    <string name="volume_panel_position_left">Linkerkant</string>
-    <string name="volume_panel_position_right">Rechterkant</string>
+    <string name="volume_panel_on_left_title">Toon paneel aan de linkerkant</string>
+    <string name="volume_panel_on_left_summary">Geef het volumepaneel weer aan de linkerkant van het scherm</string>
     <string name="button_wake_title">Apparaat ontwaken</string>
     <string name="volume_answer_call_title">Oproep beantwoorden</string>
     <string name="volume_answer_call_summary">Inkomende oproepen beantwoorden door op de volumeknoppen te drukken</string>
@@ -203,6 +204,7 @@
     <string name="swap_capacitive_keys_summary">Recente apps- en terugknop omwisselen</string>
     <string name="navigation_bar_category">Navigatiebalk</string>
     <string name="navigation_bar_enable_taskbar_title">Taakbalk inschakelen</string>
+    <string name="navigation_bar_invert_layout_title">Omgekeerde lay-out</string>
     <string name="navigation_bar_left_summary">Navigatiebalk aan de linkerkant van het scherm weergeven in liggende stand</string>
     <string name="navigation_bar_back_long_press_title">Actie terug-knop bij lang ingedrukt houden</string>
     <string name="navigation_bar_home_long_press_title">Thuisknop lang indrukken</string>
@@ -366,6 +368,7 @@
     <string name="status_bar_am_pm_hidden">Verborgen</string>
     <string name="status_bar_battery_title">Accupictogram</string>
     <string name="status_bar_battery_style_title">Opmaak accustatus</string>
+    <string name="status_bar_battery_style_icon_portrait">Pictogram (staand)</string>
     <string name="status_bar_battery_style_circle">Cirkel</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Accupercentage</string>
@@ -415,10 +418,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>Totaal aantal bijdragers:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Totaal aantal commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Laatste update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS-statistieken</string>
-    <string name="anonymous_statistics_summary">Help LineageOS te verbeteren door anonieme statistieken te verzenden</string>
+    <string name="anonymous_statistics_title">OrionOS-statistieken</string>
+    <string name="anonymous_statistics_summary">Help OrionOS te verbeteren door anonieme statistieken te verzenden</string>
     <string name="anonymous_statistics_warning_title">Over</string>
-    <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van LineageOS verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
+    <string name="anonymous_statistics_warning">Door statistieken verzenden toe te staan worden tijdens het opstarten anonieme gegevens naar de ontwikkelaars van OrionOS verzonden om unieke installaties te kunnen volgen. In de gegevens zit een uniek id-nummer verwerkt, dat uw privacy niet schendt.\n\nOm een voorbeeld te zien, tikt u op \'Voorbeeld van gegevens\'.</string>
     <string name="enable_reporting_title">Statistieken verzenden</string>
     <string name="preview_data_title">Voorbeeld van gegevens</string>
     <string name="view_stats_title">Statistieken tonen</string>
@@ -504,7 +507,7 @@
     <string name="trust_feature_security_patches_value_new">Bijgewerkt</string>
     <string name="trust_feature_security_patches_value_medium">Een paar maanden oud</string>
     <string name="trust_feature_security_patches_value_old">Verouderd</string>
-    <string name="trust_feature_security_patches_explain">Beveiligingspatches worden maandelijks door Google vrijgegeven in samenwerking met SoC-leveranciers om fouten aan te pakken die kunnen worden uitgebuit door kwaadwillende apps om beveiligingsbeperkingen te omzeilen en permanente schade aan uw apparaat te veroorzaken. Patches die door Google beschikbaar worden gesteld, worden elke maand op alle ondersteunde apparaten toegepast, maar patches voor bedrijfseigen code kunnen alleen door de fabrikant van uw apparaat worden toegepast. Om uw apparaat veilig te houden, moet u ervoor zorgen dat uw LineageOS-build altijd up-to-date is en (indien van toepassing) zorgen dat uw leveranciers-image wordt geüpdatet naar de laatste die door LineageOS wordt aanbevolen.</string>
+    <string name="trust_feature_security_patches_explain">Beveiligingspatches worden maandelijks door Google vrijgegeven in samenwerking met SoC-leveranciers om fouten aan te pakken die kunnen worden uitgebuit door kwaadwillende apps om beveiligingsbeperkingen te omzeilen en permanente schade aan uw apparaat te veroorzaken. Patches die door Google beschikbaar worden gesteld, worden elke maand op alle ondersteunde apparaten toegepast, maar patches voor bedrijfseigen code kunnen alleen door de fabrikant van uw apparaat worden toegepast. Om uw apparaat veilig te houden, moet u ervoor zorgen dat uw OrionOS-build altijd up-to-date is en (indien van toepassing) zorgen dat uw leveranciers-image wordt geüpdatet naar de laatste die door OrionOS wordt aanbevolen.</string>
     <string name="trust_feature_encryption">Encryptie</string>
     <string name="trust_feature_encryption_value_enabled">Ingeschakeld</string>
     <string name="trust_feature_encryption_value_nolock">Vereist een veilig vergrendelingsscherm</string>

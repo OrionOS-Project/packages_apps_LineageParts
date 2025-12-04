@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Nastavenia LineageOS</string>
+    <string name="lineageparts_title">Nastavenia OrionOS</string>
     <string name="loading">Nahrávanie\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Zrušiť</string>
@@ -85,6 +85,7 @@
     <string name="live_display_low_power_summary">Nastaviť zobrazenie pre najnižšiu spotrebu energie bez zhoršenia čitateľnosti</string>
     <string name="live_display_enhance_color_title">Vylepšiť farby</string>
     <string name="live_display_enhance_color_summary">Zlepšiť živosť farieb pleťových odtieňov, scenérie a ďalších obrázkov</string>
+    <string name="live_display_color_profile_title">Farebný profil</string>
     <string name="live_display_color_profile_standard_title">Štandard</string>
     <string name="live_display_color_profile_standard_summary">Presné farby a jasná biela</string>
     <string name="live_display_color_profile_natural_title">Prirodzené</string>
@@ -157,8 +158,8 @@
     <string name="power_end_call_summary">Stlačením tlačidla Napájanie sa ukončí aktuálny hovor</string>
     <string name="swap_volume_buttons_title">Preorientovať</string>
     <string name="swap_volume_buttons_summary">Po otočení obrazovky prevrátiť aj zmysel tlačidiel hlasitosti</string>
-    <string name="volume_panel_position_left">Vľavo</string>
-    <string name="volume_panel_position_right">Vpravo</string>
+    <string name="volume_panel_on_left_title">Zobraziť panel vľavo</string>
+    <string name="volume_panel_on_left_summary">Zobraziť panel hlasitosti na ľavej strane obrazovky</string>
     <string name="button_wake_title">Prebudiť zariadenie</string>
     <string name="volume_answer_call_title">Prijať hovor</string>
     <string name="volume_answer_call_summary">Prijať prichádzajúci hovor stlačením niektorého z tlačidiel hlasitosti</string>
@@ -184,6 +185,7 @@
     <string name="swap_capacitive_keys_title">Prehodiť kapacitné tlačidlá</string>
     <string name="swap_capacitive_keys_summary">Vymeniť poradie tlačidiel Nedávne a Späť</string>
     <string name="navigation_bar_category">Navigačný panel</string>
+    <string name="navigation_bar_invert_layout_title">Invertovať rozloženie</string>
     <string name="navigation_bar_left_summary">V režime na šírku umiestniť navigačný panel na ľavú stranu obrazovky</string>
     <string name="navigation_bar_back_long_press_title">Akcia späť dlhým stlačením</string>
     <string name="navigation_bar_home_long_press_title">Akcia dlhého stlačenia tlačidla Domov</string>
@@ -339,6 +341,7 @@
     <string name="status_bar_am_pm_hidden">Skryté</string>
     <string name="status_bar_battery_title">Indikátor stavu batérie</string>
     <string name="status_bar_battery_style_title">Zobrazenie stavu batérie</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikona na výšku</string>
     <string name="status_bar_battery_style_circle">Kruh</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Percentá batérie</string>
@@ -385,10 +388,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>Celkom prispievateľov:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Celkom príspevkov:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Posledná aktualizácia:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Štatistiky LineageOS</string>
-    <string name="anonymous_statistics_summary">Pomôžte zlepšiť LineageOS povolením anonymných štatistických hlásení</string>
+    <string name="anonymous_statistics_title">Štatistiky OrionOS</string>
+    <string name="anonymous_statistics_summary">Pomôžte zlepšiť OrionOS povolením anonymných štatistických hlásení</string>
     <string name="anonymous_statistics_warning_title">O</string>
-    <string name="anonymous_statistics_warning">Povolením štatistík LineageOS súhlasíte s odosielaním neosobných údajov vývojárom LineageOSu, za účelom evidencie jedinečných inštalácií naprieč všetkými zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
+    <string name="anonymous_statistics_warning">Povolením štatistík OrionOS súhlasíte s odosielaním neosobných údajov vývojárom OrionOSu, za účelom evidencie jedinečných inštalácií naprieč všetkými zariadeniami. Informácie obsahujú unikátny identifikátor, ktorý neohrozuje vaše súkromné alebo osobné údaje. Údaje sú odoslané pri každom spustení.\n\nNa ukážku odosielaných údajov kliknite na Prehľad údajov.</string>
     <string name="enable_reporting_title">Povoliť hlásenia</string>
     <string name="preview_data_title">Prehľad údajov</string>
     <string name="view_stats_title">Zobraziť štatistiky</string>
@@ -470,7 +473,7 @@
     <string name="trust_feature_security_patches_value_new">Aktuálne</string>
     <string name="trust_feature_security_patches_value_medium">Staré niekoľko mesiacov</string>
     <string name="trust_feature_security_patches_value_old">Neaktuálne</string>
-    <string name="trust_feature_security_patches_explain">Bezpečnostné záplaty sú vydávané mesačne spoločnosťou Google a dodávateľmi SoC na riešenie nedostatkov v systéme, ktoré by mohli byť zneužiť škodlivými aplikáciami na obídenie bezpečnostných obmedzení a mohli by spôsobiť dočasné alebo trvalé poškodenie vášho zariadenia.\nZatiaľ čo záplaty platformy sú aktualizované globálne každý mesiac, záplaty OEM dodávateľov sú aktualizované z času na čas.\nAk chcete, aby vaše zariadenie bolo v bezpečí, uistite sa, že vaša zostava LineageOS je vždy aktuálna.</string>
+    <string name="trust_feature_security_patches_explain">Bezpečnostné záplaty sú vydávané mesačne spoločnosťou Google a dodávateľmi SoC na riešenie nedostatkov v systéme, ktoré by mohli byť zneužiť škodlivými aplikáciami na obídenie bezpečnostných obmedzení a mohli by spôsobiť dočasné alebo trvalé poškodenie vášho zariadenia.\nZatiaľ čo záplaty platformy sú aktualizované globálne každý mesiac, záplaty OEM dodávateľov sú aktualizované z času na čas.\nAk chcete, aby vaše zariadenie bolo v bezpečí, uistite sa, že vaša zostava OrionOS je vždy aktuálna.</string>
     <string name="trust_feature_encryption">Šifrovanie</string>
     <string name="trust_feature_encryption_value_enabled">Zapnuté</string>
     <string name="trust_feature_encryption_value_nolock">Je potrebná zabezpečená obrazovka uzamknutia</string>

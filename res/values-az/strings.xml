@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS Ayarları</string>
+    <string name="lineageparts_title">OrionOS Ayarları</string>
     <string name="loading">Yüklənir\u2026</string>
     <string name="dlg_ok">Oldu</string>
     <string name="cancel">İmtina</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Tam dolma üçün hədəf vaxt</string>
     <string name="charging_control_target_time_summary">Batareya, %s tərəfindən tam doldurulacaq</string>
     <string name="charging_control_limit_title">Limit</string>
-    <string name="charging_control_limit_summary">Hazırkı limit: %d%%</string>
     <string name="battery_light_title">Batareya işığı</string>
     <string name="battery_light_enable_title">Batareya işığını fəallaşdır</string>
     <string name="battery_low_pulse_title">Batareya zəifdirsə yanıb sön</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">Ekranda xarablaşma olmadan ekranı ən aşağı enerji istehlakı üçün nizamlayın</string>
     <string name="live_display_enhance_color_title">Rəngləri artır</string>
     <string name="live_display_enhance_color_summary">Dəri tonu, səhnə və digər təsvirlərin rəng titrəməsini təkmilləşdirər</string>
-    <string name="live_display_color_profile_preview">Rəng önizləməsi</string>
+    <string name="live_display_color_profile_title">Rəng profili</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Dəqiq rənglər və parlaq ağlar</string>
     <string name="live_display_color_profile_natural_title">Tәbii</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">Güc düyməsinə basaraq mövcud zəngi bitir</string>
     <string name="swap_volume_buttons_title">Yenidən yönləndir</string>
     <string name="swap_volume_buttons_summary">Ekran döndəriləndə səs düymələrinin yerini dəyişdir</string>
-    <string name="volume_panel_position_title">Həcm paneli mövqeyi</string>
-    <string name="volume_panel_position_left">Sol</string>
-    <string name="volume_panel_position_right">Sağ</string>
+    <string name="volume_panel_on_left_title">Paneli solda göstər</string>
+    <string name="volume_panel_on_left_summary">Səs panelini ekranın sol hissəsində göstər</string>
     <string name="button_wake_title">Cihazı oyandır</string>
     <string name="volume_answer_call_title">Zəngə cavab ver</string>
     <string name="volume_answer_call_summary">Gələn zəngləri səs düymələrini basaraq cavabla</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">Ən son tətbiqlər və geri düymələrinin yerini dəyişdir</string>
     <string name="navigation_bar_category">Naviqasiya çubuğu</string>
     <string name="navigation_bar_enable_taskbar_title">Tapşırıq çubuğunu fəallaşdır</string>
+    <string name="navigation_bar_invert_layout_title">Tərsinə düz</string>
+    <string name="navigation_bar_invert_layout_summary">Naviqasiya çubuğunun düzümünü tərsinə çevir</string>
     <string name="navigation_bar_left_summary">Üfüqi rejimdə ekranın sol tərəfinə naviqasiya çubuğu yerləşdirir</string>
     <string name="navigation_bar_back_long_press_title">Geri düyməsinə uzun basma</string>
     <string name="navigation_bar_home_long_press_title">Əsas ekran düyməsinə uzun basma</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">Gizli</string>
     <string name="status_bar_battery_title">Batareya göstəricisi</string>
     <string name="status_bar_battery_style_title">Batareya status stili</string>
-    <string name="status_bar_battery_style_icon_landscape">Üfüqi ikon</string>
+    <string name="status_bar_battery_style_icon_portrait">Şaquli ikon</string>
     <string name="status_bar_battery_style_circle">Dairə</string>
-    <string name="status_bar_battery_style_dotted_circle">Nöqtəli dairə</string>
     <string name="status_bar_battery_style_text">Mətn</string>
     <string name="status_bar_battery_percentage_title">Batareya faizi</string>
     <string name="status_bar_battery_percentage_default">Gizli</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">Heç vaxt göstərmə</string>
     <string name="status_bar_brightness_slider_show_expanded">Genişləndiriləndə göstər</string>
     <string name="status_bar_brightness_slider_show_always">Həmişə göstər</string>
-    <string name="status_bar_brightness_slider_position_title">Parlaqlıq diyircəyi mövqeyi</string>
-    <string name="status_bar_brightness_slider_position_top">Üst</string>
-    <string name="status_bar_brightness_slider_position_bottom">Alt</string>
     <string name="network_traffic_settings_title">Şəbəkə trafik monitoru</string>
     <string name="network_traffic_settings_summary">Status çubuğunda hazırkı şəbəkə trafikini göstər</string>
     <string name="network_traffic_mode_title">Görüntü rejimi</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">Mövqeyi</string>
     <string name="network_traffic_autohide">Avtomatik gizlət</string>
     <string name="network_traffic_autohide_summary">Fəaliyyət olmayanda trafik monitorunu gizlət</string>
-    <string name="network_traffic_hide_arrows">Oxları gizlət</string>
-    <string name="network_traffic_hide_arrows_summary">Yükləmə və endirmə yön oxlarını gizlət</string>
     <string name="network_traffic_units_title">Trafik ölçü vahidi</string>
     <string name="network_traffic_units_kilobits">Saniyədə kilobit (kb/s)</string>
     <string name="network_traffic_units_megabits">Saniyədə megabit (Mb/s)</string>
@@ -426,11 +420,11 @@
     <string name="contributions_info_msg"><![CDATA[<b>Cəmi töhfə verənlər:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Cəmi daxil edilənlər:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Son güncəlləmə:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS statistikaları</string>
-    <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, LineageOS-u təkmilləşdirməyimizə kömək edin</string>
+    <string name="anonymous_statistics_title">OrionOS statistikaları</string>
+    <string name="anonymous_statistics_summary">Anonim statistika göndərməni tərcih edərək, OrionOS-u təkmilləşdirməyimizə kömək edin</string>
     <string name="anonymous_statistics_warning_title">Haqqında</string>
-    <string name="anonymous_statistics_warning">LineageOS Statistikalarına daxil olmaqla, cihazlar arasındakı unikal quraşdırmaların
-        izlənilməsi üçün LineageOS-un gəlişdiricilərinə fərdi olmayan verilərin göndərilməsinə icazə veriləcək. Göndərilən məlumatlar, məxfiliyiniz və ya fərdi veriləriniz
+    <string name="anonymous_statistics_warning">OrionOS Statistikalarına daxil olmaqla, cihazlar arasındakı unikal quraşdırmaların
+        izlənilməsi üçün OrionOS-un gəlişdiricilərinə fərdi olmayan verilərin göndərilməsinə icazə veriləcək. Göndərilən məlumatlar, məxfiliyiniz və ya fərdi veriləriniz
         üçün təhlükəli olmayan unikal bir identifikator ehtiva edir. Verilər, hər açlış zamanı göndərilir.\n\nGöndərilən verilərə nümunə olaraq \"Veriləri önizlə\"yə toxunun.</string>
     <string name="enable_reporting_title">Hesabat göndərməni fəallaşdır</string>
     <string name="preview_data_title">Veriləri önizlə</string>
@@ -517,7 +511,7 @@
     <string name="trust_feature_security_patches_value_new">Güncəldir</string>
     <string name="trust_feature_security_patches_value_medium">Bir neçə ay köhnəlib</string>
     <string name="trust_feature_security_patches_value_old">Köhnəlib</string>
-    <string name="trust_feature_security_patches_explain">Güvənlik yamaqları Google tərəfindən, SoC satıcıları ilə əməkdaşlıq edilərək, güvənlik məhdudiyyətlərini ötürmək və cihazınıza zərər vurmaq üçün zərərli tətbiqlər tərəfindən istismar edilə biləcək çatışmazlıqları aradan qaldırmaq üçün aylıq olaraq yayımlanır. Google tərəfindən hazırlanan yamaqlar hər ay bütün dəstəklənən cihazlara tətbiq olunur, ancaq xüsusi kodlu yamaqlar yalnız cihazınızın istehsalçısı tərəfindən tətbiq oluna bilər. Cihazınızı güvənli şəkildə saxlamaq üçün LineageOS quruluşunuzun həmişə güncəl olduğuna və (mümkündürsə) satıcı faylınızın LineageOS tərəfindən məsləhət görülən ən son versiyaya güncəlləndiyinə əmin olun.</string>
+    <string name="trust_feature_security_patches_explain">Güvənlik yamaqları Google tərəfindən, SoC satıcıları ilə əməkdaşlıq edilərək, güvənlik məhdudiyyətlərini ötürmək və cihazınıza zərər vurmaq üçün zərərli tətbiqlər tərəfindən istismar edilə biləcək çatışmazlıqları aradan qaldırmaq üçün aylıq olaraq yayımlanır. Google tərəfindən hazırlanan yamaqlar hər ay bütün dəstəklənən cihazlara tətbiq olunur, ancaq xüsusi kodlu yamaqlar yalnız cihazınızın istehsalçısı tərəfindən tətbiq oluna bilər. Cihazınızı güvənli şəkildə saxlamaq üçün OrionOS quruluşunuzun həmişə güncəl olduğuna və (mümkündürsə) satıcı faylınızın OrionOS tərəfindən məsləhət görülən ən son versiyaya güncəlləndiyinə əmin olun.</string>
     <string name="trust_feature_encryption">Şifrələmə</string>
     <string name="trust_feature_encryption_value_enabled">Fəaldır</string>
     <string name="trust_feature_encryption_value_nolock">Təhlükəsiz bir kilid ekranı lazımdır</string>
@@ -533,7 +527,7 @@
     <string name="trust_onboarding_learn_more">Ətraflı öyrən</string>
     <string name="trust_onboarding_done">Anladım</string>
     <string name="trust_restrict_usb_title">USB-ni məhdudlaşdır</string>
-    <string name="trust_restrict_usb_summary">Qulaqlıq, depolama cihazları, giriş cihazları (maus, klaviatura, joystiklər) və ADB kimi USB bağlantıları üçün kontrol dəstəyi</string>
+    <string name="trust_restrict_usb_summary">Qulaqlıq, anbar, giriş cihazları (maus, klaviatura, joystiklər) və ADB kimi USB bağlantıları üçün kontrol dəstəyi</string>
     <string name="trust_restrict_usb_always">USB bağlantılarını rədd et</string>
     <string name="trust_restrict_usb_keyguard">USB bağlantılarına ekran kilidi açıq olanda icazə ver</string>
     <string name="trust_restrict_usb_disabled">USB bağlantılarına həmişə icazə ver</string>

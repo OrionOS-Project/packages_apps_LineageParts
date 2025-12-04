@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Configurações do LineageOS</string>
+    <string name="lineageparts_title">Configurações do OrionOS</string>
     <string name="loading">Carregando\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Cancelar</string>
     <string name="add">Adicionar</string>
     <string name="choose_app">Selecionar app</string>
-    <string name="reset">Reconfigurar</string>
+    <string name="reset">Redefinir</string>
     <string name="advanced">Avançado</string>
     <string name="settings">Configurações</string>
     <string name="name">Nome</string>
@@ -53,9 +53,9 @@
     <string name="charging_control_enable_title">Ativar o controle de carregamento</string>
     <string name="charging_control_mode_title">Modo de carregamento</string>
     <string name="charging_control_mode_auto_title">Cronograma automático</string>
-    <string name="charging_control_mode_auto_summary">Determinar automaticamente quando iniciar o carregamento com base nos alarmes configurados</string>
+    <string name="charging_control_mode_auto_summary">Determinar automaticamente quando iniciar o carregamento com base nos alarmes definidos</string>
     <string name="charging_control_mode_custom_title">Cronograma personalizado</string>
-    <string name="charging_control_mode_custom_summary">Configure um horário para atingir a carga completa</string>
+    <string name="charging_control_mode_custom_summary">Definir um horário para atingir a carga completa</string>
     <string name="charging_control_mode_limit_title">Limitar o carregamento</string>
     <string name="charging_control_mode_limit_summary">Interromper o carregamento ao atingir uma determinada porcentagem</string>
     <string name="charging_control_start_time_title">Horário inicial</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Horário alvo para carga completa</string>
     <string name="charging_control_target_time_summary">A bateria estará totalmente carregada às %s</string>
     <string name="charging_control_limit_title">Limite</string>
-    <string name="charging_control_limit_summary">Limite atual: %d%%</string>
     <string name="battery_light_title">Luz de bateria</string>
     <string name="battery_light_enable_title">Ativar a luz de bateria</string>
     <string name="battery_low_pulse_title">Pulsar se a bateria estiver fraca</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">Ajustar a tela para menor consumo de energia sem degradação</string>
     <string name="live_display_enhance_color_title">Aprimorar cores</string>
     <string name="live_display_enhance_color_summary">Melhorar a vivacidade das cores de tons de pele, cenário e outras imagens</string>
-    <string name="live_display_color_profile_preview">Pré-visualização de cores</string>
+    <string name="live_display_color_profile_title">Perfil de cor</string>
     <string name="live_display_color_profile_standard_title">Padrão</string>
     <string name="live_display_color_profile_standard_summary">Cores precisas e brancos cintilantes</string>
     <string name="live_display_color_profile_natural_title">Natural</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">Encerre chamadas pressionando o botão liga/desliga</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Inverter botões de volume quando a tela estiver invertida</string>
-    <string name="volume_panel_position_title">Posição do painel de volume</string>
-    <string name="volume_panel_position_left">esquerdo</string>
-    <string name="volume_panel_position_right">direito</string>
+    <string name="volume_panel_on_left_title">Mostrar painel ao lado esquerdo</string>
+    <string name="volume_panel_on_left_summary">Mostrar o painel de volume no lado esquerdo da tela</string>
     <string name="button_wake_title">Acordar dispositivo</string>
     <string name="volume_answer_call_title">Atender chamada</string>
     <string name="volume_answer_call_summary">Atenda chamadas ao pressionar os botões de volume</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">Trocar a ordem dos botões de recentes e de voltar</string>
     <string name="navigation_bar_category">Barra de navegação</string>
     <string name="navigation_bar_enable_taskbar_title">Ativar barra de tarefas</string>
+    <string name="navigation_bar_invert_layout_title">Inverter botões</string>
+    <string name="navigation_bar_invert_layout_summary">Inverte a ordem dos botões da barra de navegação</string>
     <string name="navigation_bar_left_summary">Posicionar a barra de navegação no lado esquerdo da tela em modo paisagem</string>
     <string name="navigation_bar_back_long_press_title">Ação de um toque longo no botão de voltar</string>
     <string name="navigation_bar_home_long_press_title">Ação de toque longo no botão de início</string>
@@ -289,7 +289,7 @@
     <string name="rename_dialog_title">Renomear</string>
     <string name="rename_dialog_message">Digite um novo nome</string>
     <string name="rename_dialog_hint">Digite o nome do perfil</string>
-    <string name="profile_reset_title">Reconfigurar</string>
+    <string name="profile_reset_title">Redefinir</string>
     <string name="profile_reset_message">Apagar todos os perfis e grupos de apps criados e restaurá-los para o padrão?</string>
     <string name="profile_app_delete_confirm">Remover este app?</string>
     <string name="profile_networkmode_2g">2G</string>
@@ -299,7 +299,7 @@
     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
     <string name="profile_volumeoverrides_title">Opções de volume</string>
     <string name="connection_state_enabled">Ativar</string>
-    <string name="volume_override_summary">Configurar para %1$s/%2$s</string>
+    <string name="volume_override_summary">Definir para %1$s/%2$s</string>
     <string name="profile_volume_override_checkbox_label">Modificar volume</string>
     <string name="profile_profiles_manage">Perfis</string>
     <string name="profile_profile_manage">Gerenciar perfil</string>
@@ -322,7 +322,7 @@
     <string name="profile_lockmode_disabled_summary">Desativar a tela de bloqueio</string>
     <string name="profile_airplanemode_title">Modo avião</string>
     <string name="profile_brightness_title">Brilho da tela</string>
-    <string name="profile_brightness_override_summary">Configurar para %1$d%%</string>
+    <string name="profile_brightness_override_summary">Definir para %1$d%%</string>
     <string name="profile_brightness_override_checkbox_label">Modificar brilho</string>
     <string name="toggleWifi">Wi\u2011Fi</string>
     <string name="toggleWifiAp">Ponto de acesso Wi\u2011Fi</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">Oculto</string>
     <string name="status_bar_battery_title">Indicador de bateria</string>
     <string name="status_bar_battery_style_title">Estilo do status da bateria</string>
-    <string name="status_bar_battery_style_icon_landscape">Ícone horizontal</string>
+    <string name="status_bar_battery_style_icon_portrait">Ícone retrato</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
-    <string name="status_bar_battery_style_dotted_circle">Círculo pontilhado</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
     <string name="status_bar_battery_percentage_default">Oculto</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">Nunca mostrar</string>
     <string name="status_bar_brightness_slider_show_expanded">Mostrar quando expandido</string>
     <string name="status_bar_brightness_slider_show_always">Mostrar sempre</string>
-    <string name="status_bar_brightness_slider_position_title">Posição do deslizante de brilho</string>
-    <string name="status_bar_brightness_slider_position_top">Superior</string>
-    <string name="status_bar_brightness_slider_position_bottom">Inferior</string>
     <string name="network_traffic_settings_title">Monitor de tráfego de rede</string>
     <string name="network_traffic_settings_summary">Mostrar o tráfego de rede na barra de status</string>
     <string name="network_traffic_mode_title">Modo de exibição</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">Posição</string>
     <string name="network_traffic_autohide">Ocultar automaticamente</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor de tráfego quando não há atividade</string>
-    <string name="network_traffic_hide_arrows">Ocultar setas</string>
-    <string name="network_traffic_hide_arrows_summary">Ocultar setas de direção de upload e download</string>
     <string name="network_traffic_units_title">Unidades de medida do tráfego</string>
     <string name="network_traffic_units_kilobits">Kilobits por segundo (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits por segundo (Mb/s)</string>
@@ -426,10 +420,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>Total de colaboradores:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total de commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Última atualização:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Estatísticas do LineageOS</string>
-    <string name="anonymous_statistics_summary">Ajude a melhorar o LineageOS enviando estatísticas anônimas</string>
+    <string name="anonymous_statistics_title">Estatísticas do OrionOS</string>
+    <string name="anonymous_statistics_summary">Ajude a melhorar o OrionOS enviando estatísticas anônimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
-    <string name="anonymous_statistics_warning">Optar por enviar estatísticas anônimas ao LineageOS permitirá que dados não pessoais sejam enviados aos desenvolvedores do LineageOS para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador único que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara ver um exemplo dos dados enviados, toque em \'Pré-visualizar dados\'.</string>
+    <string name="anonymous_statistics_warning">Optar por enviar estatísticas anônimas ao OrionOS permitirá que dados não pessoais sejam enviados aos desenvolvedores do OrionOS para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador único que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara ver um exemplo dos dados enviados, toque em \'Pré-visualizar dados\'.</string>
     <string name="enable_reporting_title">Ativar o envio de relatórios</string>
     <string name="preview_data_title">Pré-visualizar dados</string>
     <string name="view_stats_title">Ver estatísticas</string>
@@ -515,12 +509,12 @@
     <string name="trust_feature_security_patches_value_new">Atualizado</string>
     <string name="trust_feature_security_patches_value_medium">Desatualizado há alguns meses</string>
     <string name="trust_feature_security_patches_value_old">Desatualizado</string>
-    <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com as fabricantes de SoC para corrigir falhas que possam ser exploradas por apps maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pela fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do LineageOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem da sua fabricante esteja atualizada para a versão recomendada pelo LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">As atualizações de segurança são lançadas mensalmente pela Google em cooperação com as fabricantes de SoC para corrigir falhas que possam ser exploradas por apps maliciosos que visam burlar as restrições de segurança e causar danos permanentes em seu dispositivo. As atualizações disponibilizadas pela Google são aplicadas mensalmente em todos os dispositivos suportados, mas as atualizações para o código proprietário só podem ser aplicadas pela fabricante do seu dispositivo. Para manter o seu dispositivo seguro, certifique-se de que a sua versão do OrionOS esteja sempre atualizada e, se aplicável, assegure-se de que a imagem da sua fabricante esteja atualizada para a versão recomendada pelo OrionOS.</string>
     <string name="trust_feature_encryption">Criptografia</string>
     <string name="trust_feature_encryption_value_enabled">Ativada</string>
     <string name="trust_feature_encryption_value_nolock">Requer uma tela de bloqueio segura</string>
     <string name="trust_feature_encryption_value_disabled">Desativada</string>
-    <string name="trust_feature_encryption_explain">Criptografar o seu dispositivo impede o acesso aos seus dados quando o telefone não está inicializado no Android. Isto é importante caso o seu telefone seja roubado e evita que outros consigam ler suas mensagens, contatos e outras informações privadas sem a sua senha.\nPara tornar a criptografia mais eficaz, é necessário configurar uma senha segura para tela de bloqueio.</string>
+    <string name="trust_feature_encryption_explain">Criptografar o seu dispositivo impede o acesso aos seus dados quando o telefone não está inicializado no Android. Isto é importante caso o seu telefone seja roubado e evita que outros consigam ler suas mensagens, contatos e outras informações particulares sem o seu código de acesso.\nPara tornar a criptografia mais eficaz, é necessário definir um código de acesso seguro da tela de bloqueio.</string>
     <string name="trust_category_tools">Privacidade</string>
     <string name="trust_notification_alerts_title">Alertas de segurança</string>
     <string name="trust_warnings_alerts_intro">Você pode selecionar quais os alertas de segurança que deseja receber. Para a sua segurança, recomendamos que ative todos os alertas.</string>

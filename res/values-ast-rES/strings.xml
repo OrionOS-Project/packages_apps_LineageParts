@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Configuración de LineageOS</string>
+    <string name="lineageparts_title">Configuración de OrionOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">D\'acuerdu</string>
     <string name="cancel">Encaboxar</string>
@@ -95,6 +95,8 @@
     <string name="power_end_call_summary">Fina la llamada actual al primir el botón d\'apagáu</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Intercambia los botones del volume al voltiar la pantalla</string>
+    <string name="volume_panel_on_left_title">Amosar el panel na esquierda</string>
+    <string name="volume_panel_on_left_summary">Amuesa\'l panel del volume nel llau esquierdu de la pantalla</string>
     <string name="button_wake_title">Esconsoñar el preséu</string>
     <string name="volume_answer_call_title">Contestar llamaes</string>
     <string name="volume_answer_call_summary">Contesta les llamaes entrantes al primir los botones del volume</string>
@@ -109,6 +111,8 @@
     <string name="swap_capacitive_keys_summary">Intercambia l\'orde de los botones «Vista xeneral» y «Atrás»</string>
     <string name="navigation_bar_category">Barra de navegación</string>
     <string name="navigation_bar_enable_taskbar_title">Activar la barra de xeres</string>
+    <string name="navigation_bar_invert_layout_title">Invertir la distribución</string>
+    <string name="navigation_bar_invert_layout_summary">Invierte la distribución de la barra de navegación</string>
     <string name="navigation_bar_back_long_press_title">Aición del primíu prollongáu d\'«Atrás»</string>
     <string name="navigation_bar_edge_long_swipe_title">Aición del eslizamientu llongu dende\'l berbesu</string>
     <string name="power_menu_title">Menú d\'apagáu</string>
@@ -169,6 +173,7 @@
     <string name="status_bar_clock_position_left">Esquierda</string>
     <string name="status_bar_clock_position_center">Central</string>
     <string name="status_bar_battery_style_title">Estilu del estáu de la batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Iconu vertical</string>
     <string name="status_bar_battery_style_circle">Iconu circular</string>
     <string name="status_bar_battery_style_text">Testu</string>
     <string name="status_bar_battery_percentage_text_inside">Dientro del iconu</string>
@@ -205,7 +210,7 @@
     <string name="contributions_info_msg"><![CDATA[<b>Collaboradores totales:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Unvios totales:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Últimu anovamientu:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Estadístiques de LineageOS</string>
+    <string name="anonymous_statistics_title">Estadístiques de OrionOS</string>
     <string name="preview_data_title">Previsualizar los datos</string>
     <string name="anonymous_learn_more">Saber más</string>
     <string name="preview_id_title">ID única</string>
@@ -241,7 +246,7 @@
     <string name="trust_feature_security_patches_value_new">Anovaos</string>
     <string name="trust_feature_security_patches_value_medium">Ensin anovar hai unos meses</string>
     <string name="trust_feature_security_patches_value_old">Ensin anovar</string>
-    <string name="trust_feature_security_patches_explain">Google, n\'andecha colos fabricantes de SoC, espubliza mensualmente parches de seguranza pa iguar fallos que podríen esplotar aplicaciones malicioses pa saltar les llendes de seguranza y causar un dañu permanente nel preséu. Los parches forníos por Google aplíquense cada mes en tolos preseos compatibles, mas los parches pa códigu privativu namás pue aplicalos el fabricante del preséu. Pa caltener el preséu seguru, asegúrate de que la versión de LineageOS ta anovada siempre, y (si ye posible) asegúrate tamién de que la imaxe del fabricante ta anovada a la última versión qu\'aconseya LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Google, n\'andecha colos fabricantes de SoC, espubliza mensualmente parches de seguranza pa iguar fallos que podríen esplotar aplicaciones malicioses pa saltar les llendes de seguranza y causar un dañu permanente nel preséu. Los parches forníos por Google aplíquense cada mes en tolos preseos compatibles, mas los parches pa códigu privativu namás pue aplicalos el fabricante del preséu. Pa caltener el preséu seguru, asegúrate de que la versión de OrionOS ta anovada siempre, y (si ye posible) asegúrate tamién de que la imaxe del fabricante ta anovada a la última versión qu\'aconseya OrionOS.</string>
     <string name="trust_feature_encryption">Cifráu</string>
     <string name="trust_feature_encryption_value_enabled">Activóse</string>
     <string name="trust_feature_encryption_value_nolock">Precisa una pantalla de bloquéu segura</string>

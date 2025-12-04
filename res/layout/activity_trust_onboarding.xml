@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2018 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -48,7 +48,7 @@
 
         <Button
             android:id="@+id/trust_onboarding_learn_more"
-            style="@style/ButtonStyle"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -57,7 +57,7 @@
 
     <Button
         android:id="@+id/trust_onboarding_done"
-        style="@style/PrimaryButtonStyle"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Setări LineageOS</string>
+    <string name="lineageparts_title">Setări OrionOS</string>
     <string name="loading">Încărcare\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Revocați</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Timpul țintă până la încărcarea completă</string>
     <string name="charging_control_target_time_summary">Bateria va fi încărcată complet până la %s</string>
     <string name="charging_control_limit_title">Limită</string>
-    <string name="charging_control_limit_summary">Limita curentă: %d%%</string>
     <string name="battery_light_title">Lumină baterie</string>
     <string name="battery_light_enable_title">Activează lumina bateriei</string>
     <string name="battery_low_pulse_title">Pulsează dacă bateria este slabă</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">Reglează afişajul pentru cel mai mic consum de energie fără degradare</string>
     <string name="live_display_enhance_color_title">Sporește culorile</string>
     <string name="live_display_enhance_color_summary">Îmbunătățește vibranța culorilor pentru tonuri, peisaje și alte imagini</string>
-    <string name="live_display_color_profile_preview">Previzualizarea culorii</string>
+    <string name="live_display_color_profile_title">Profilul culorii</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Culori precise și alb luminos</string>
     <string name="live_display_color_profile_natural_title">Natural</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">Terminați apelul curent prin apăsarea butonului pornire</string>
     <string name="swap_volume_buttons_title">Reorientare</string>
     <string name="swap_volume_buttons_summary">Schimbă între ele butoanele de volum atunci când ecranul este rotit</string>
-    <string name="volume_panel_position_title">Poziția panoului de volum</string>
-    <string name="volume_panel_position_left">Stânga</string>
-    <string name="volume_panel_position_right">Dreapta</string>
+    <string name="volume_panel_on_left_title">Afișează panoul pe stânga</string>
+    <string name="volume_panel_on_left_summary">Afișează panoul de volum pe stânga ecranului</string>
     <string name="button_wake_title">Trezește dispozitivul</string>
     <string name="volume_answer_call_title">Răspundere apel</string>
     <string name="volume_answer_call_summary">Răspundeți la apelurile de intrare apăsând butoanele de volum</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">Interschimbă ordinea butoanelor Recente și Înapoi</string>
     <string name="navigation_bar_category">Bară de navigare</string>
     <string name="navigation_bar_enable_taskbar_title">Activează bara de activități</string>
+    <string name="navigation_bar_invert_layout_title">Inversare aspect</string>
+    <string name="navigation_bar_invert_layout_summary">Inversează aspectul bării de navigare</string>
     <string name="navigation_bar_left_summary">Pune bara de navigare în partea stângă a ecranului în modul peisaj</string>
     <string name="navigation_bar_back_long_press_title">Acțiune apăsare lungă Înapoi</string>
     <string name="navigation_bar_home_long_press_title">Acțiunea apăsării lungi pe Acasă</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">Ascuns</string>
     <string name="status_bar_battery_title">Indicator baterie</string>
     <string name="status_bar_battery_style_title">Stilul stării bateriei</string>
-    <string name="status_bar_battery_style_icon_landscape">Iconiță peisaj</string>
+    <string name="status_bar_battery_style_icon_portrait">Iconiță portret</string>
     <string name="status_bar_battery_style_circle">Cerc</string>
-    <string name="status_bar_battery_style_dotted_circle">Cerc punctat</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Procentaj baterie</string>
     <string name="status_bar_battery_percentage_default">Ascuns</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">Nu mai arăta</string>
     <string name="status_bar_brightness_slider_show_expanded">Arată la extindere</string>
     <string name="status_bar_brightness_slider_show_always">Arată întotdeauna</string>
-    <string name="status_bar_brightness_slider_position_title">Poziție glisor luminozitate</string>
-    <string name="status_bar_brightness_slider_position_top">Sus</string>
-    <string name="status_bar_brightness_slider_position_bottom">Jos</string>
     <string name="network_traffic_settings_title">Monitorizare trafic rețea</string>
     <string name="network_traffic_settings_summary">Afișează nivelele curente ale traficului rețelei în bara de stare</string>
     <string name="network_traffic_mode_title">Mod de afișare</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">Poziție</string>
     <string name="network_traffic_autohide">Ascundere automată</string>
     <string name="network_traffic_autohide_summary">Ascunde monitorul de trafic atunci când nu există nici o activitate</string>
-    <string name="network_traffic_hide_arrows">Ascunde săgeţile</string>
-    <string name="network_traffic_hide_arrows_summary">Ascunde săgeţile de încărcare şi descărcare</string>
     <string name="network_traffic_units_title">Unități de măsurare trafic</string>
     <string name="network_traffic_units_kilobits">Kilobiţi pe secundă (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabiţi pe secundă (Mb/s)</string>
@@ -426,10 +420,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>Total contribuitori:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total commit-uri:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Ultima actualizare:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Statistici LineageOS</string>
-    <string name="anonymous_statistics_summary">Ajutați la îmbunătățirea lui LineageOS prin optarea pentru raportarea anonimă de statistici</string>
+    <string name="anonymous_statistics_title">Statistici OrionOS</string>
+    <string name="anonymous_statistics_summary">Ajutați la îmbunătățirea lui OrionOS prin optarea pentru raportarea anonimă de statistici</string>
     <string name="anonymous_statistics_warning_title">Despre</string>
-    <string name="anonymous_statistics_warning">Optând să trimiteți Statistici LineageOS, le permiteți dezvoltatorilor LineageOS
+    <string name="anonymous_statistics_warning">Optând să trimiteți Statistici OrionOS, le permiteți dezvoltatorilor OrionOS
         să primească date ne-personale pentru a urmări instalările unice la o gamă mare de dispozitive. Informația transmisă include un identificator unic,
         care nu vă compromite intimitatea sau datele personale. Datele sunt trimise la fiecare pornire a dispozitivului.\n\nPentru a vedea un exemplu de date ce se trimit, apăsați pe Previzualizare Date.</string>
     <string name="enable_reporting_title">Activare raportare</string>
@@ -517,7 +511,7 @@
     <string name="trust_feature_security_patches_value_new">La zi</string>
     <string name="trust_feature_security_patches_value_medium">Expirate de câteva luni</string>
     <string name="trust_feature_security_patches_value_old">Expirat</string>
-    <string name="trust_feature_security_patches_explain">Corecțiile de securitate sunt lansate lunar de către Google în cooperare cu vânzătorii SoC pentru a remedia problemele care pot fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și să cauzeze daune permanente în dispozitivul dvs. Patch-urile făcute disponibile de Google sunt aplicate lunar pe toate dispozitivele compatibile, dar patch-urile la codul proprietar pot fi aplicate numai de către producătorul dispozitivului. Pentru a vă menține dispozitivul în siguranță, asigurați-vă că build-ul LineageOS al dvs. este la zi și (dacă se aplică) asigurați-vă că imaginea vendor-ului este actualizată la cea recomandată de LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Corecțiile de securitate sunt lansate lunar de către Google în cooperare cu vânzătorii SoC pentru a remedia problemele care pot fi exploatate de aplicațiile malițioase pentru a trece peste restricțiile de securitate și să cauzeze daune permanente în dispozitivul dvs. Patch-urile făcute disponibile de Google sunt aplicate lunar pe toate dispozitivele compatibile, dar patch-urile la codul proprietar pot fi aplicate numai de către producătorul dispozitivului. Pentru a vă menține dispozitivul în siguranță, asigurați-vă că build-ul OrionOS al dvs. este la zi și (dacă se aplică) asigurați-vă că imaginea vendor-ului este actualizată la cea recomandată de OrionOS.</string>
     <string name="trust_feature_encryption">Criptare</string>
     <string name="trust_feature_encryption_value_enabled">Activat</string>
     <string name="trust_feature_encryption_value_nolock">Necesită un ecran de blocare securizat</string>

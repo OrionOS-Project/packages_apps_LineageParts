@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS Settings</string>
+    <string name="lineageparts_title">OrionOS Settings</string>
     <string name="loading">Loading\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Cancel</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Target time to full charge</string>
     <string name="charging_control_target_time_summary">Battery will be fully charged by %s</string>
     <string name="charging_control_limit_title">Limit</string>
-    <string name="charging_control_limit_summary">Current limit: %d%%</string>
     <string name="battery_light_title">Battery light</string>
     <string name="battery_light_enable_title">Enable battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">Adjust display for lowest power consumption without degradation</string>
     <string name="live_display_enhance_color_title">Enhance colours</string>
     <string name="live_display_enhance_color_summary">Improve colour vibrance of flesh tones, scenery, and other images</string>
-    <string name="live_display_color_profile_preview">Colour preview</string>
+    <string name="live_display_color_profile_title">Colour profile</string>
     <string name="live_display_color_profile_standard_title">Standard</string>
     <string name="live_display_color_profile_standard_summary">Accurate colours and bright whites</string>
     <string name="live_display_color_profile_natural_title">Natural</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">End the current call by pressing the power button</string>
     <string name="swap_volume_buttons_title">Reorient</string>
     <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
-    <string name="volume_panel_position_title">Volume panel position</string>
-    <string name="volume_panel_position_left">Left</string>
-    <string name="volume_panel_position_right">Right</string>
+    <string name="volume_panel_on_left_title">Show panel on left</string>
+    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
     <string name="button_wake_title">Wake device</string>
     <string name="volume_answer_call_title">Answer call</string>
     <string name="volume_answer_call_summary">Answer incoming calls by pressing the volume buttons</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">Swap the order of recents and back buttons</string>
     <string name="navigation_bar_category">Navigation bar</string>
     <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
+    <string name="navigation_bar_invert_layout_title">Invert layout</string>
+    <string name="navigation_bar_invert_layout_summary">Inverts the layout of the navigation bar</string>
     <string name="navigation_bar_left_summary">Place the navigation bar on the left side of the screen in landscape mode</string>
     <string name="navigation_bar_back_long_press_title">Back long press action</string>
     <string name="navigation_bar_home_long_press_title">Home long press action</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">Hidden</string>
     <string name="status_bar_battery_title">Battery indicator</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
     <string name="status_bar_battery_style_text">Text</string>
     <string name="status_bar_battery_percentage_title">Battery percentage</string>
     <string name="status_bar_battery_percentage_default">Hidden</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">Never show</string>
     <string name="status_bar_brightness_slider_show_expanded">Show when expanded</string>
     <string name="status_bar_brightness_slider_show_always">Show always</string>
-    <string name="status_bar_brightness_slider_position_title">Brightness slider position</string>
-    <string name="status_bar_brightness_slider_position_top">Top</string>
-    <string name="status_bar_brightness_slider_position_bottom">Bottom</string>
     <string name="network_traffic_settings_title">Network traffic monitor</string>
     <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
     <string name="network_traffic_mode_title">Display mode</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">Position</string>
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_hide_arrows">Hide arrows</string>
-    <string name="network_traffic_hide_arrows_summary">Hide upload and download direction arrows</string>
     <string name="network_traffic_units_title">Traffic measurement units</string>
     <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
@@ -426,11 +420,11 @@
     <string name="contributions_info_msg"><![CDATA[<b>Total contributors:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total commits:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Last update:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS statistics</string>
-    <string name="anonymous_statistics_summary">Help make LineageOS better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">OrionOS statistics</string>
+    <string name="anonymous_statistics_summary">Help make OrionOS better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into LineageOS Statistics will allow non-personal data to be submitted to the
-        developers of LineageOS to track unique installations across devices. The information submitted includes an unique identifier,
+    <string name="anonymous_statistics_warning">Opting into OrionOS Statistics will allow non-personal data to be submitted to the
+        developers of OrionOS to track unique installations across devices. The information submitted includes an unique identifier,
         which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
@@ -517,7 +511,7 @@
     <string name="trust_feature_security_patches_value_new">Up to date</string>
     <string name="trust_feature_security_patches_value_medium">A few months out of date</string>
     <string name="trust_feature_security_patches_value_old">Out of date</string>
-    <string name="trust_feature_security_patches_explain">Security patches are released monthly by Google in cooperation with SoC vendors to address flaws which could be exploited by malicious apps to bypass security restrictions and cause permanent damage to your device. Patches made available by Google are applied every month on all supported devices, but patches to proprietary code can only be applied by your device\'s manufacturer. To keep your device safe make sure your LineageOS build is always up-to-date, and (if applicable) ensure your vendor image is updated to the latest one recommended by LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Security patches are released monthly by Google in cooperation with SoC vendors to address flaws which could be exploited by malicious apps to bypass security restrictions and cause permanent damage to your device. Patches made available by Google are applied every month on all supported devices, but patches to proprietary code can only be applied by your device\'s manufacturer. To keep your device safe make sure your OrionOS build is always up-to-date, and (if applicable) ensure your vendor image is updated to the latest one recommended by OrionOS.</string>
     <string name="trust_feature_encryption">Encryption</string>
     <string name="trust_feature_encryption_value_enabled">Enabled</string>
     <string name="trust_feature_encryption_value_nolock">Needs a secure lock screen</string>

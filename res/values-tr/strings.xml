@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS Ayarları</string>
+    <string name="lineageparts_title">OrionOS Ayarları</string>
     <string name="loading">Yükleniyor\u2026</string>
     <string name="dlg_ok">TAMAM</string>
     <string name="cancel">İptal</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Tam şarj için hedef zaman</string>
     <string name="charging_control_target_time_summary">Pil şu saatte tamamen şarj olmuş olacak: %s</string>
     <string name="charging_control_limit_title">Limit</string>
-    <string name="charging_control_limit_summary">Mevcut limit: %d%%</string>
     <string name="battery_light_title">Pil ışığı</string>
     <string name="battery_light_enable_title">Pil ışığını etkinleştir</string>
     <string name="battery_low_pulse_title">Pil zayıfsa yanıp sön</string>
@@ -105,6 +104,7 @@
     <string name="live_display_low_power_summary">Ekranda bozulma olmadan en düşük güç tüketimi için ayarlar</string>
     <string name="live_display_enhance_color_title">Renkleri geliştir</string>
     <string name="live_display_enhance_color_summary">Ten tonları, sahne ve diğer görüntülerin renk titreşimini geliştirir</string>
+    <string name="live_display_color_profile_title">Renk profili</string>
     <string name="live_display_color_profile_standard_title">Standart</string>
     <string name="live_display_color_profile_standard_summary">Doğru renkler ve parlak beyazlar</string>
     <string name="live_display_color_profile_natural_title">Doğal</string>
@@ -177,8 +177,8 @@
     <string name="power_end_call_summary">Güç tuşuna basmak mevcut aramayı sonlandırır</string>
     <string name="swap_volume_buttons_title">Yeniden ata</string>
     <string name="swap_volume_buttons_summary">Ekran döndürüldüğünde ses tuşlarını yer değiştir</string>
-    <string name="volume_panel_position_left">Sol</string>
-    <string name="volume_panel_position_right">Sağ</string>
+    <string name="volume_panel_on_left_title">Paneli solda göster</string>
+    <string name="volume_panel_on_left_summary">Ses panelini ekranın sol tarafında göster</string>
     <string name="button_wake_title">Cihazı uyandır</string>
     <string name="volume_answer_call_title">Aramaya cevap ver</string>
     <string name="volume_answer_call_summary">Ses düğmelerine basarak gelen aramaları cevapla</string>
@@ -205,6 +205,7 @@
     <string name="swap_capacitive_keys_summary">Son kullanılanlar ve geri tuşlarının yerini değiştirin</string>
     <string name="navigation_bar_category">Gezinme çubuğu</string>
     <string name="navigation_bar_enable_taskbar_title">Görev çubuğunu etkinleştir</string>
+    <string name="navigation_bar_invert_layout_title">Düzeni tersine çevir</string>
     <string name="navigation_bar_left_summary">Yatay modda ekranın sol tarafına gezinme çubuğunu yerleştirir</string>
     <string name="navigation_bar_back_long_press_title">Geri tuşuna uzun basma eylemi</string>
     <string name="navigation_bar_home_long_press_title">Ana ekran tuşuna uzun basma eylemi</string>
@@ -368,7 +369,7 @@
     <string name="status_bar_am_pm_hidden">Gizli</string>
     <string name="status_bar_battery_title">Pil göstergesi</string>
     <string name="status_bar_battery_style_title">Pil durumu stili</string>
-    <string name="status_bar_battery_style_icon_landscape">Yatay simge</string>
+    <string name="status_bar_battery_style_icon_portrait">Dikey simge</string>
     <string name="status_bar_battery_style_circle">Daire</string>
     <string name="status_bar_battery_style_text">Metin</string>
     <string name="status_bar_battery_percentage_title">Pil yüzdesi</string>
@@ -383,9 +384,6 @@
     <string name="status_bar_brightness_slider_show_never">Asla gösterme</string>
     <string name="status_bar_brightness_slider_show_expanded">Genişletildiğinde göster</string>
     <string name="status_bar_brightness_slider_show_always">Her zaman göster</string>
-    <string name="status_bar_brightness_slider_position_title">Parlaklık kaydırıcısı konumu</string>
-    <string name="status_bar_brightness_slider_position_top">Üst</string>
-    <string name="status_bar_brightness_slider_position_bottom">Alt</string>
     <string name="network_traffic_settings_title">Ağ trafiği göstergesi</string>
     <string name="network_traffic_settings_summary">Durum çubuğunda geçerli ağ trafiği seviyelerini göster</string>
     <string name="network_traffic_mode_title">Görüntüleme modu</string>
@@ -421,11 +419,11 @@
     <string name="contributions_info_msg"><![CDATA[<b>Tüm katkı sağlayanlar:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Toplam girdi:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Son güncelleme:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS istatistikleri</string>
-    <string name="anonymous_statistics_summary">Anonim istatistik raporlamayı tercih ederek LineageOS\'u daha iyi hale getirmeye yardımcı olun</string>
+    <string name="anonymous_statistics_title">OrionOS istatistikleri</string>
+    <string name="anonymous_statistics_summary">Anonim istatistik raporlamayı tercih ederek OrionOS\'u daha iyi hale getirmeye yardımcı olun</string>
     <string name="anonymous_statistics_warning_title">Hakkında</string>
-    <string name="anonymous_statistics_warning">LineageOS İstatistiklerine dahil olmak, cihazlar arasındaki benzersiz yüklemeleri izlemek için
-        LineageOS geliştiricilerine kişisel olmayan verilerin gönderilmesine izin verecektir. Gönderilen bilgiler, gizliliğinizi veya
+    <string name="anonymous_statistics_warning">OrionOS İstatistiklerine dahil olmak, cihazlar arasındaki benzersiz yüklemeleri izlemek için
+        OrionOS geliştiricilerine kişisel olmayan verilerin gönderilmesine izin verecektir. Gönderilen bilgiler, gizliliğinizi veya
         kişisel verilerinizi tehlikeye atmayan benzersiz bir tanımlayıcıyı içerir. Veriler her önyükleme sırasında gönderilir.\n\nGönderilen verilere bir örnek için Verileri Önizle üzerine dokunun.</string>
     <string name="enable_reporting_title">Raporlamayı etkinleştir</string>
     <string name="preview_data_title">Veriyi önizle</string>
@@ -512,7 +510,7 @@
     <string name="trust_feature_security_patches_value_new">Güncel</string>
     <string name="trust_feature_security_patches_value_medium">Birkaç ay eski</string>
     <string name="trust_feature_security_patches_value_old">Güncellenmemiş</string>
-    <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için LineageOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın LineageOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
+    <string name="trust_feature_security_patches_explain">Güvenlik kısıtlamalarını atlamak ve cihazınızda kalıcı hasara neden olmak için kötü amaçlı uygulamalar tarafından kötüye kullanılabilecek hataları gidermek için SoC satıcılarıyla işbirliği içinde Google tarafından aylık olarak güvenlik yamaları yayınlanır. Google tarafından kullanıma sunulan yamalar, desteklenen tüm cihazlarda her ay uygulanır, ancak tescilli koddaki yamalar sadece cihazınızın üreticisi tarafından uygulanabilir. Cihazınızı güvende tutmak için OrionOS yapınızın her zaman güncel olduğundan ve (varsa) satıcı dosyanızın OrionOS tarafından önerilen en yeni sürüme güncellendiğinden emin olun.</string>
     <string name="trust_feature_encryption">Şifreleme</string>
     <string name="trust_feature_encryption_value_enabled">Etkin</string>
     <string name="trust_feature_encryption_value_nolock">Güvenli bir kilit ekranına ihtiyaç duyar</string>

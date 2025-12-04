@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Ustawienia LineageOS</string>
+    <string name="lineageparts_title">Ustawienia OrionOS</string>
     <string name="loading">Ładowanie\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Anuluj</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">Docelowy czas pełnego naładowania</string>
     <string name="charging_control_target_time_summary">Bateria zostanie w pełni naładowana za %s</string>
     <string name="charging_control_limit_title">Ograniczenie</string>
-    <string name="charging_control_limit_summary">Bieżący limit: %d%%</string>
     <string name="battery_light_title">Dioda baterii</string>
     <string name="battery_light_enable_title">Włącz diodę dla baterii</string>
     <string name="battery_low_pulse_title">Migaj, gdy poziom baterii jest niski</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">Dostosuj sposób wyświetlania do najniższego zużycia energii bez utraty jakości</string>
     <string name="live_display_enhance_color_title">Wzmocnienie kolorów</string>
     <string name="live_display_enhance_color_summary">Popraw odczucie kolorów skóry, scenerii oraz innych obrazów</string>
-    <string name="live_display_color_profile_preview">Podgląd koloru</string>
+    <string name="live_display_color_profile_title">Profil kolorów</string>
     <string name="live_display_color_profile_standard_title">Standardowe</string>
     <string name="live_display_color_profile_standard_summary">Dokładne odwzorowanie kolorów i jasności bieli</string>
     <string name="live_display_color_profile_natural_title">Naturalne</string>
@@ -163,7 +162,7 @@
     <string name="hardware_keys_action_sleep">Wyłączanie ekranu</string>
     <string name="hardware_keys_action_last_app">Ostatnia aplikacja</string>
     <string name="hardware_keys_action_split_screen">Podziel ekran</string>
-    <string name="hardware_keys_action_kill_app">Zakończ aktywną aplikację</string>
+    <string name="hardware_keys_action_kill_app">Zamykanie aplikacji</string>
     <string name="camera_sleep_on_release_title">Podgląd ekranu</string>
     <string name="camera_sleep_on_release_summary">Lekkie naciśnięcie aktywuje ekran tylko do czasu zwolnienia przycisku</string>
     <string name="camera_launch_title">Włącz aparat</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">Zakończ bieżące połączenie, naciskając przycisk zasilania</string>
     <string name="swap_volume_buttons_title">Zmiana orientacji</string>
     <string name="swap_volume_buttons_summary">Zamieniaj przyciski głośności po obróceniu ekranu</string>
-    <string name="volume_panel_position_title">Pozycja panelu głośności</string>
-    <string name="volume_panel_position_left">Po lewej</string>
-    <string name="volume_panel_position_right">Po prawej</string>
+    <string name="volume_panel_on_left_title">Pokazuj panel głośności po lewej</string>
+    <string name="volume_panel_on_left_summary">Pokazuj panel głośności po lewej stronie ekranu</string>
     <string name="button_wake_title">Wybudź urządzenie</string>
     <string name="volume_answer_call_title">Odbierz połączenie</string>
     <string name="volume_answer_call_summary">Odbieranie połączeń przychodzących za pomocą przycisków głośności</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">Zamień miejscami przyciski: Ostatnio uruchomionych aplikacji z Wstecz</string>
     <string name="navigation_bar_category">Pasek nawigacji</string>
     <string name="navigation_bar_enable_taskbar_title">Włącz pasek zadań</string>
+    <string name="navigation_bar_invert_layout_title">Odwróć układ</string>
+    <string name="navigation_bar_invert_layout_summary">Odwraca układ paska nawigacji</string>
     <string name="navigation_bar_left_summary">W trybie poziomym pokazuj pasek nawigacji po lewej stronie ekranu</string>
     <string name="navigation_bar_back_long_press_title">Przytrzymanie przycisku \"wstecz\"</string>
     <string name="navigation_bar_home_long_press_title">Przytrzymanie przycisku \"ekran główny\"</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">Ukryty</string>
     <string name="status_bar_battery_title">Wskaźnik baterii</string>
     <string name="status_bar_battery_style_title">Styl wskaźnika baterii</string>
-    <string name="status_bar_battery_style_icon_landscape">Ikona poziomo</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikona pionowo</string>
     <string name="status_bar_battery_style_circle">Okrąg</string>
-    <string name="status_bar_battery_style_dotted_circle">Kropkowany okrąg</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Procent baterii</string>
     <string name="status_bar_battery_percentage_default">Ukryty</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">Nigdy nie pokazuj</string>
     <string name="status_bar_brightness_slider_show_expanded">Pokazuj po rozwinięciu</string>
     <string name="status_bar_brightness_slider_show_always">Pokazuj zawsze</string>
-    <string name="status_bar_brightness_slider_position_title">Pozycja suwaka jasności</string>
-    <string name="status_bar_brightness_slider_position_top">U góry</string>
-    <string name="status_bar_brightness_slider_position_bottom">Na spodzie</string>
     <string name="network_traffic_settings_title">Monitor ruchu sieciowego</string>
     <string name="network_traffic_settings_summary">Pokazuj bieżące poziomy ruchu sieciowego na pasku stanu</string>
     <string name="network_traffic_mode_title">Tryb wyświetlania</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">Położenie</string>
     <string name="network_traffic_autohide">Autoukrywanie</string>
     <string name="network_traffic_autohide_summary">Ukryj monitor ruchu, przy braku aktywności</string>
-    <string name="network_traffic_hide_arrows">Ukrywaj strzałki transferu</string>
-    <string name="network_traffic_hide_arrows_summary">Ukrywaj strzałki kierunku wysyłania i pobierania danych</string>
     <string name="network_traffic_units_title">Jednostki pomiaru ruchu</string>
     <string name="network_traffic_units_kilobits">Kilobity na sekundę (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabity na sekundę (Mb/s)</string>
@@ -418,7 +412,7 @@
     <string name="contributors_cloud_fragment_title">Twórcy</string>
     <string name="contributors_cloud_loading_message">Wczytywanie danych o twórcach\u2026</string>
     <string name="contributors_cloud_failed_message">Nie można wczytać danych o twórcach</string>
-    <string name="contributor_info_menu">Informacje o twórcy</string>
+    <string name="contributor_info_menu">Informacje o twórcach</string>
     <string name="contributor_info_msg"><![CDATA[<b>Nazwa:</b><xliff:g id="name"></xliff:g><br/><br/> 
                  <b>Pseudonim:</b><xliff:g id="nick">%2$s</xliff:g><br/><br/>
                  <b>Poprawki:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
@@ -426,11 +420,11 @@
     <string name="contributions_info_msg"><![CDATA[<b>Łączna liczba współtwórców:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Łączna liczba poprawek:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Ostatnia aktualizacja:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">Statystyki LineageOS</string>
-    <string name="anonymous_statistics_summary">Pomóż ulepszyć LineageOS, pozwalając na wysyłanie anonimowych statystyk</string>
+    <string name="anonymous_statistics_title">Statystyki OrionOS</string>
+    <string name="anonymous_statistics_summary">Pomóż ulepszyć OrionOS, pozwalając na wysyłanie anonimowych statystyk</string>
     <string name="anonymous_statistics_warning_title">O programie</string>
-    <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w statystykach LineageOS zezwoli na przesyłanie anonimowych danych do
-        programistów LineageOS, aby śledzić ilość unikalnych instalacji na urządzeniach . Informacje zawierają unikalny identyfikator,
+    <string name="anonymous_statistics_warning">Wyrażenie zgody na udział w statystykach OrionOS zezwoli na przesyłanie anonimowych danych do
+        programistów OrionOS, aby śledzić ilość unikalnych instalacji na urządzeniach . Informacje zawierają unikalny identyfikator,
        który nie narusza twojej prywatności lub prywatnych danych. Dane są wysyłane przy każdym uruchomieniu.\n\nAby zobaczyć przykład przesyłanych danych naciśnij \"podgląd danych\".</string>
     <string name="enable_reporting_title">Włącz raportowanie</string>
     <string name="preview_data_title">Podgląd danych</string>
@@ -517,7 +511,7 @@
     <string name="trust_feature_security_patches_value_new">Aktualne</string>
     <string name="trust_feature_security_patches_value_medium">Przestarzałe od kilku miesięcy</string>
     <string name="trust_feature_security_patches_value_old">Nieaktualne</string>
-    <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji LineageOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Aktualizacje zabezpieczeń są wydawane co miesiąc przez Google w kooperacji z dostawcami SoC w celu łatania luk w systemie, które mogą zostać wykorzystane przez złośliwe oprogramowanie w celu obejścia zabezpieczeń oraz wyrządzenia trwałych szkód w twoim urządzeniu. Łatki udostępniane przez Google są aplikowane w każdym miesiącu na wszystkich wspieranych urządzeniach, ale poprawki dla kodu własnościowego mogą być aplikowane tylko przez producenta twojego telefonu. By utrzymać twój telefon bezpiecznym, zawsze używaj najnowsze wersji OrionOS i (jeżeli dotyczy) twój obraz vendor jest zaktualizowany do najnowszej wersji zalecanej przez OrionOS.</string>
     <string name="trust_feature_encryption">Szyfrowanie</string>
     <string name="trust_feature_encryption_value_enabled">Włączono</string>
     <string name="trust_feature_encryption_value_nolock">Wymaga zabezpieczonego ekranu blokady</string>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS の設定</string>
+    <string name="lineageparts_title">OrionOS の設定</string>
     <string name="loading">読み込み中\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">キャンセル</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">フル充電までの目標時間</string>
     <string name="charging_control_target_time_summary">バッテリーは %s までに完全に充電されます</string>
     <string name="charging_control_limit_title">制限</string>
-    <string name="charging_control_limit_summary">現在の制限: %d%%</string>
     <string name="battery_light_title">電池のライト</string>
     <string name="battery_light_enable_title">バッテリーライトを有効化</string>
     <string name="battery_low_pulse_title">残量低下時に点滅</string>
@@ -105,7 +104,7 @@
     <string name="live_display_low_power_summary">性能を低下させずにディスプレイを最低の消費電力に調整する</string>
     <string name="live_display_enhance_color_title">色を補正</string>
     <string name="live_display_enhance_color_summary">肌の色、風景や他の画像の色の鮮やかさを補正する</string>
-    <string name="live_display_color_profile_preview">色のプレビュー</string>
+    <string name="live_display_color_profile_title">カラープロファイル</string>
     <string name="live_display_color_profile_standard_title">標準</string>
     <string name="live_display_color_profile_standard_summary">正確な色と明るい白に補正します</string>
     <string name="live_display_color_profile_natural_title">自然</string>
@@ -178,9 +177,8 @@
     <string name="power_end_call_summary">電源ボタンを押して現在の通話を終了する</string>
     <string name="swap_volume_buttons_title">再配置</string>
     <string name="swap_volume_buttons_summary">画面回転時に音量ボタンを入れ替えます</string>
-    <string name="volume_panel_position_title">音量パネルの位置</string>
-    <string name="volume_panel_position_left">左</string>
-    <string name="volume_panel_position_right">右</string>
+    <string name="volume_panel_on_left_title">パネルを左側に表示</string>
+    <string name="volume_panel_on_left_summary">画面の左側に音量パネルを表示する</string>
     <string name="button_wake_title">端末をスリープ解除</string>
     <string name="volume_answer_call_title">着信に応答</string>
     <string name="volume_answer_call_summary">音量ボタンを押して着信に応答する</string>
@@ -207,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">履歴ボタンと戻るボタンの位置を入れ替えます</string>
     <string name="navigation_bar_category">ナビゲーションバー</string>
     <string name="navigation_bar_enable_taskbar_title">タスクバーを有効化</string>
+    <string name="navigation_bar_invert_layout_title">レイアウトを反転</string>
+    <string name="navigation_bar_invert_layout_summary">ナビゲーションバーのレイアウトを反転</string>
     <string name="navigation_bar_left_summary">横画面モードでナビゲーションバーを画面の左側に配置する</string>
     <string name="navigation_bar_back_long_press_title">戻るボタン長押しの動作</string>
     <string name="navigation_bar_home_long_press_title">ホームボタン長押しの動作</string>
@@ -370,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">表示しない</string>
     <string name="status_bar_battery_title">バッテリー残量表示</string>
     <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
-    <string name="status_bar_battery_style_icon_landscape">横向きのアイコン</string>
+    <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
     <string name="status_bar_battery_style_circle">サークル</string>
-    <string name="status_bar_battery_style_dotted_circle">ドットのサークル</string>
     <string name="status_bar_battery_style_text">テキスト</string>
     <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
     <string name="status_bar_battery_percentage_default">表示しない</string>
@@ -386,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">常に非表示</string>
     <string name="status_bar_brightness_slider_show_expanded">展開時に表示</string>
     <string name="status_bar_brightness_slider_show_always">常に表示</string>
-    <string name="status_bar_brightness_slider_position_title">明るさスライダーの位置</string>
-    <string name="status_bar_brightness_slider_position_top">上</string>
-    <string name="status_bar_brightness_slider_position_bottom">下</string>
     <string name="network_traffic_settings_title">ネットワークトラフィックモニター</string>
     <string name="network_traffic_settings_summary">ステータスバーに現在のネットワークトラフィック量を表示します</string>
     <string name="network_traffic_mode_title">表示モード</string>
@@ -399,8 +395,6 @@
     <string name="network_traffic_position_title">位置</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
-    <string name="network_traffic_hide_arrows">矢印を隠す</string>
-    <string name="network_traffic_hide_arrows_summary">アップロードとダウンロード方向の矢印を隠します</string>
     <string name="network_traffic_units_title">トラフィックの単位</string>
     <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
     <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>
@@ -426,10 +420,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>協力者の合計:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>コミットの合計:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>最終更新:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS の統計</string>
-    <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してLineageOSの改善に協力する</string>
+    <string name="anonymous_statistics_title">OrionOS の統計</string>
+    <string name="anonymous_statistics_summary">匿名の統計のレポートに同意してOrionOSの改善に協力する</string>
     <string name="anonymous_statistics_warning_title">情報</string>
-    <string name="anonymous_statistics_warning">LineageOSの統計に同意すると、端末間のユニークインストール回数を調べるためにLineageOSの開発者への非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データはブート時に送信されます。\n\n送信されるデータの見本は[データをプレビュー]をタップして確認することができます。</string>
+    <string name="anonymous_statistics_warning">OrionOSの統計に同意すると、端末間のユニークインストール回数を調べるためにOrionOSの開発者への非個人情報の送信を許可します。送信される情報にはユニークIDが含まれますが、プライバシーや個人データが危険にさらされることはありません。データはブート時に送信されます。\n\n送信されるデータの見本は[データをプレビュー]をタップして確認することができます。</string>
     <string name="enable_reporting_title">レポートを有効化</string>
     <string name="preview_data_title">データをプレビュー</string>
     <string name="view_stats_title">統計を表示</string>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">Configuración de LineageOS</string>
+    <string name="lineageparts_title">Configuración de OrionOS</string>
     <string name="loading">Cargando\u2026</string>
     <string name="dlg_ok">ACEPTAR</string>
     <string name="cancel">Cancelar</string>
@@ -88,6 +88,7 @@
     <string name="live_display_low_power_summary">Axusta a pantalla ata o mínimo consumo de nergía sen perda de calidade</string>
     <string name="live_display_enhance_color_title">Mellorar cores</string>
     <string name="live_display_enhance_color_summary">Mellora a viveza dos tons da pel, entorno e outras imaxes</string>
+    <string name="live_display_color_profile_title">Pefil de cor</string>
     <string name="live_display_color_profile_standard_title">Estándar</string>
     <string name="live_display_color_profile_standard_summary">Cores precisas e brancos brillantes</string>
     <string name="live_display_color_profile_natural_title">Natural</string>
@@ -160,8 +161,8 @@
     <string name="power_end_call_summary">Finalizar a chamada actual pulsando o botón de encendido</string>
     <string name="swap_volume_buttons_title">Reorientar</string>
     <string name="swap_volume_buttons_summary">Intercambiar os botóns de volume cando se xira a pantalla</string>
-    <string name="volume_panel_position_left">Esquerda</string>
-    <string name="volume_panel_position_right">Dereita</string>
+    <string name="volume_panel_on_left_title">Amosar o panel á esquerda</string>
+    <string name="volume_panel_on_left_summary">Amosar o panel de volume no lado esquerdo da pantalla</string>
     <string name="button_wake_title">Despertar dispositivo</string>
     <string name="volume_answer_call_title">Coller chamada</string>
     <string name="volume_answer_call_summary">Contestar chamadas entrantes presionando os botones do volumen</string>
@@ -187,6 +188,7 @@
     <string name="swap_capacitive_keys_title">Cambiar botóns</string>
     <string name="swap_capacitive_keys_summary">Cambiar a orde dos botóns Recente e Atrás</string>
     <string name="navigation_bar_category">Barra de navegación</string>
+    <string name="navigation_bar_invert_layout_title">Inverter disposición</string>
     <string name="navigation_bar_left_summary">Colocar a barra de navegación no lado esquerdo da pantalla cando estea en modo horizontal</string>
     <string name="navigation_bar_back_long_press_title">Prema prolongandamente no botón Atrás</string>
     <string name="navigation_bar_home_long_press_title">Acción de pulsación larga do inicio</string>
@@ -345,6 +347,7 @@
     <string name="status_bar_am_pm_hidden">Agochado</string>
     <string name="status_bar_battery_title">Indicador da batería</string>
     <string name="status_bar_battery_style_title">Estilo do estado da batería</string>
+    <string name="status_bar_battery_style_icon_portrait">Icona vertical</string>
     <string name="status_bar_battery_style_circle">Círculo</string>
     <string name="status_bar_battery_style_text">Texto</string>
     <string name="status_bar_battery_percentage_title">Porcentaxe de batería</string>
@@ -391,10 +394,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>Colaboradores totais:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Total de contribucións:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Última actualización:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS estadisticas</string>
-    <string name="anonymous_statistics_summary">Axude a mellorar LineageOS enviando informes de estatísiticas anónimas</string>
+    <string name="anonymous_statistics_title">OrionOS estadisticas</string>
+    <string name="anonymous_statistics_summary">Axude a mellorar OrionOS enviando informes de estatísiticas anónimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
-    <string name="anonymous_statistics_warning">Optar polo envío de estatísticas LineageOS permitirá que se transmitan datos non personais aos desenvolvedores de LineageOS para rastrear intalacións únicas através dos dispositivos. Os datos transmitidos teñen un identificador único, que non compromete a súa privacidade ou datos persoais. Os datos serán enviados cada vez que se inicie.\n\nPara ver un exemplo dos datos van ser enviados, toque en Previsualizar datos.</string>
+    <string name="anonymous_statistics_warning">Optar polo envío de estatísticas OrionOS permitirá que se transmitan datos non personais aos desenvolvedores de OrionOS para rastrear intalacións únicas através dos dispositivos. Os datos transmitidos teñen un identificador único, que non compromete a súa privacidade ou datos persoais. Os datos serán enviados cada vez que se inicie.\n\nPara ver un exemplo dos datos van ser enviados, toque en Previsualizar datos.</string>
     <string name="enable_reporting_title">Activar envío de estatísticas</string>
     <string name="preview_data_title">Previsualizar datos</string>
     <string name="view_stats_title">Ver as estatísticas</string>
@@ -480,7 +483,7 @@
     <string name="trust_feature_security_patches_value_new">Actualizada</string>
     <string name="trust_feature_security_patches_value_medium">Desactualizada desde hai uns meses</string>
     <string name="trust_feature_security_patches_value_old">Desactualizada</string>
-    <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do LineageOS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do LineageOS.</string>
+    <string name="trust_feature_security_patches_explain">Os parches de seguranza son liberados mensualmente por Google coa cooperación dos fabricantes de SoC para corrixir fallos que poden ser aproveitados por aplicacións maliciosas para saltar as restricións de seguranza e causar danos permanentes o teu dispositivo. Os parches dispoñíbeis dende Google aplícanse mensualmente en tódolos dispositivos compatíbeis, agás os de código propietario que serán aplicados polo fabricante do teu dispositivo. Para manter o teu dispositivo seguro verifica que a versión do OrionOS está actualizada, e (se aplica) asegúrate que a imaxe do teu fabricante está actualizada á máis recente recomendada polo equipo do OrionOS.</string>
     <string name="trust_feature_encryption">Cifrado</string>
     <string name="trust_feature_encryption_value_enabled">Activado</string>
     <string name="trust_feature_encryption_value_nolock">Precisas dunha pantalla de bloqueo segura</string>

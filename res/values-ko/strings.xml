@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-FileCopyrightText: 2017-2023 The OrionOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">LineageOS 설정</string>
+    <string name="lineageparts_title">OrionOS 설정</string>
     <string name="loading">불러오는 중\u2026</string>
     <string name="dlg_ok">확인</string>
     <string name="cancel">취소</string>
@@ -63,7 +63,6 @@
     <string name="charging_control_target_time_title">완전 충전할 목표 시간</string>
     <string name="charging_control_target_time_summary">배터리가 %s까지 충전됩니다.</string>
     <string name="charging_control_limit_title">제한</string>
-    <string name="charging_control_limit_summary">현재 제한: %d%%</string>
     <string name="battery_light_title">배터리 표시등</string>
     <string name="battery_light_enable_title">배터리 표시등 사용</string>
     <string name="battery_low_pulse_title">배터리가 적을 때 깜빡임</string>
@@ -105,6 +104,7 @@
     <string name="live_display_low_power_summary">열화 없는 한도 내에서 화면을 조정하여 전력 소모 감소</string>
     <string name="live_display_enhance_color_title">색상 향상</string>
     <string name="live_display_enhance_color_summary">피부 톤, 풍경 및 기타 이미지에서 색의 생동감을 향상</string>
+    <string name="live_display_color_profile_title">색상 프로필</string>
     <string name="live_display_color_profile_standard_title">표준</string>
     <string name="live_display_color_profile_standard_summary">정확한 색상 및 밝은 흰색</string>
     <string name="live_display_color_profile_natural_title">자연스러운</string>
@@ -177,9 +177,8 @@
     <string name="power_end_call_summary">전원 버튼을 눌러 현재 진행 중인 통화 종료</string>
     <string name="swap_volume_buttons_title">버튼 재정렬</string>
     <string name="swap_volume_buttons_summary">화면이 회전되어 있을 때 볼륨 위/아래 버튼 전환</string>
-    <string name="volume_panel_position_title">볼륨 패널 위치</string>
-    <string name="volume_panel_position_left">왼쪽</string>
-    <string name="volume_panel_position_right">오른쪽</string>
+    <string name="volume_panel_on_left_title">패널을 좌측에 표시</string>
+    <string name="volume_panel_on_left_summary">화면 좌측에 볼륨 패널 표시</string>
     <string name="button_wake_title">기기 깨우기</string>
     <string name="volume_answer_call_title">전화 수신</string>
     <string name="volume_answer_call_summary">볼륨 버튼을 눌러 걸려온 전화를 받기</string>
@@ -206,6 +205,8 @@
     <string name="swap_capacitive_keys_summary">최근 앱 버튼과 뒤로 버튼의 위치를 바꾸기</string>
     <string name="navigation_bar_category">내비게이션 바</string>
     <string name="navigation_bar_enable_taskbar_title">작업 표시줄 사용</string>
+    <string name="navigation_bar_invert_layout_title">레이아웃 반전</string>
+    <string name="navigation_bar_invert_layout_summary">내비게이션 바 레이아웃 반전</string>
     <string name="navigation_bar_left_summary">화면 가로 모드에서 화면의 왼쪽에 내비게이션 바를 배치</string>
     <string name="navigation_bar_back_long_press_title">뒤로 가기 버튼을 길게 누를 때 동작</string>
     <string name="navigation_bar_home_long_press_title">홈 버튼을 길게 누를 시 동작 설정</string>
@@ -369,9 +370,8 @@
     <string name="status_bar_am_pm_hidden">숨김</string>
     <string name="status_bar_battery_title">배터리 표시</string>
     <string name="status_bar_battery_style_title">배터리 표시 스타일</string>
-    <string name="status_bar_battery_style_icon_landscape">가로 아이콘</string>
+    <string name="status_bar_battery_style_icon_portrait">세로 아이콘</string>
     <string name="status_bar_battery_style_circle">원형 아이콘</string>
-    <string name="status_bar_battery_style_dotted_circle">점선 원</string>
     <string name="status_bar_battery_style_text">수치</string>
     <string name="status_bar_battery_percentage_title">배터리 잔량 표시</string>
     <string name="status_bar_battery_percentage_default">숨김</string>
@@ -385,9 +385,6 @@
     <string name="status_bar_brightness_slider_show_never">표시 안 함</string>
     <string name="status_bar_brightness_slider_show_expanded">펼치면 표시</string>
     <string name="status_bar_brightness_slider_show_always">항상 표시</string>
-    <string name="status_bar_brightness_slider_position_title">밝기 슬라이더 위치</string>
-    <string name="status_bar_brightness_slider_position_top">위쪽</string>
-    <string name="status_bar_brightness_slider_position_bottom">아래쪽</string>
     <string name="network_traffic_settings_title">네트워크 트래픽 모니터</string>
     <string name="network_traffic_settings_summary">상태 표시줄에 현재 네트워크 트래픽 수준 표시</string>
     <string name="network_traffic_mode_title">표시 모드</string>
@@ -398,8 +395,6 @@
     <string name="network_traffic_position_title">위치</string>
     <string name="network_traffic_autohide">자동 숨기기</string>
     <string name="network_traffic_autohide_summary">아무런 활동이 없을 때 트래픽 모니터 숨기기</string>
-    <string name="network_traffic_hide_arrows">화살표 숨기기</string>
-    <string name="network_traffic_hide_arrows_summary">업로드 또는 다운로드 방향 표시 안함</string>
     <string name="network_traffic_units_title">트래픽 측정 단위</string>
     <string name="network_traffic_units_kilobits">킬로비트/초 (kb/초)</string>
     <string name="network_traffic_units_megabits">메가비트/초 (Mb/초)</string>
@@ -425,10 +420,10 @@
     <string name="contributions_info_msg"><![CDATA[<b>총 기여자:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>총 변경 사항:</b> <xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>마지막 업데이트:</b> <xliff:g id="date">%3$s</xliff:g>]]></string>
-    <string name="anonymous_statistics_title">LineageOS 통계</string>
-    <string name="anonymous_statistics_summary">익명의 통계 자료를 보내 LineageOS 개선에 도움 주기</string>
+    <string name="anonymous_statistics_title">OrionOS 통계</string>
+    <string name="anonymous_statistics_summary">익명의 통계 자료를 보내 OrionOS 개선에 도움 주기</string>
     <string name="anonymous_statistics_warning_title">정보</string>
-    <string name="anonymous_statistics_warning">LineageOS 통계를 사용하면 장치 고유의 설치 상태를 추적하기 위해 개인 정보를 포함하지 않은 정보가 LineageOS의 개발자에게 전송됩니다. 정보는 매번 부팅할 때마다 전송됩니다.\n\n전송되는 정보를 보려면 데이터 미리보기를 누르세요.</string>
+    <string name="anonymous_statistics_warning">OrionOS 통계를 사용하면 장치 고유의 설치 상태를 추적하기 위해 개인 정보를 포함하지 않은 정보가 OrionOS의 개발자에게 전송됩니다. 정보는 매번 부팅할 때마다 전송됩니다.\n\n전송되는 정보를 보려면 데이터 미리보기를 누르세요.</string>
     <string name="enable_reporting_title">보고 사용</string>
     <string name="preview_data_title">데이터 미리보기</string>
     <string name="view_stats_title">통계 보기</string>
@@ -514,7 +509,7 @@
     <string name="trust_feature_security_patches_value_new">최신</string>
     <string name="trust_feature_security_patches_value_medium">수 개월 지남</string>
     <string name="trust_feature_security_patches_value_old">오래됨</string>
-    <string name="trust_feature_security_patches_explain">보안 패치는 Google이 SoC 공급업체와의 협력으로 매월 발표됩니다. 이 보안 패치는 유해한 앱을 통해 보안을 우회하여 기기를 영구적으로 손상시킬 수 있는 취약점을 막아냅니다. Google에서 제공하는 패치는 지원하는 모든 기기에 적용할 수 있으나, 비공개 코드에 대한 패치는 기기의 공급업체에서 패치를 제공해야만 적용할 수 있습니다. 기기를 보호하려면 LineageOS를 항상 최신 버전으로 업데이트하고, 가능하면 기기의 공급업체 이미지가 LineageOS에서 권장하는 최신 이미지인지 확인하세요.</string>
+    <string name="trust_feature_security_patches_explain">보안 패치는 Google이 SoC 공급업체와의 협력으로 매월 발표됩니다. 이 보안 패치는 유해한 앱을 통해 보안을 우회하여 기기를 영구적으로 손상시킬 수 있는 취약점을 막아냅니다. Google에서 제공하는 패치는 지원하는 모든 기기에 적용할 수 있으나, 비공개 코드에 대한 패치는 기기의 공급업체에서 패치를 제공해야만 적용할 수 있습니다. 기기를 보호하려면 OrionOS를 항상 최신 버전으로 업데이트하고, 가능하면 기기의 공급업체 이미지가 OrionOS에서 권장하는 최신 이미지인지 확인하세요.</string>
     <string name="trust_feature_encryption">암호화</string>
     <string name="trust_feature_encryption_value_enabled">활성화됨</string>
     <string name="trust_feature_encryption_value_nolock">보안성 높은 잠금 화면 필요</string>
